@@ -95,3 +95,6 @@ body{background-color:#f3f1e5;background-image:radial-gradient(ellipse at 94% 4%
 @media(prefers-reduced-motion:reduce){.season-action-art *{animation:none!important}}
 
 .fold-body .section-top{display:none}
+
+/* Restore the original illustration and keep its character still. */
+.hero-art .habitat *{animation:none!important}.hero-art .habitat{transform:none!important}.hero-art .sun-halo{opacity:.25}.hero-art .beaver-character,.hero-art .beaver-tail,.hero-art .beaver-eye{transform:none!important}.season-scene *{animation:none!important}
