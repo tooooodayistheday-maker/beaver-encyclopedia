@@ -78,6 +78,15 @@
  $('#allow').onclick=()=>{window.beaverAnalytics.consent(true);$('#privacyDialog').close();toast('已儲存分析偏好');};$('#deny').onclick=()=>{window.beaverAnalytics.consent(false);$('#privacyDialog').close();toast('已停用網站分析');};
  document.addEventListener('click',e=>{const a=e.target.closest('a');if(!a)return;const href=a.getAttribute('href')||'';if(href.startsWith('#'))track('section_navigate',{section:href.slice(1)});if(a.classList.contains('source-link')||a.classList.contains('species-source'))track('reference_click',{link_url:a.href});});
  if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting&&window.beaverAnalytics?.allowed()){track('species_view',{species:entry.target.classList.contains('eurasian')?'Castor fiber':'Castor canadensis'});observer.unobserve(entry.target);}},{threshold:.5});document.querySelectorAll('.species-card').forEach(el=>observer.observe(el));}
+ 
+ document.querySelectorAll('[data-compare]').forEach(button=>button.addEventListener('click',()=>{
+  const mode=button.dataset.compare;let count=0;
+  document.querySelectorAll('[data-compare-kind]').forEach(row=>{row.hidden=mode!=='all'&&row.dataset.compareKind!==mode;if(!row.hidden)count++;});
+  document.querySelectorAll('[data-compare]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+  $('#compareStatus').textContent=`顯示${mode==='all'?'全部':mode==='different'?'不同之處':'共同本領'} ${count} 個比較項目`;
+  track('species_compare',{mode});
+ }));
+
  $('#totalFacts').textContent=facts.length;render();renderQuiz();
  if(location.hash.startsWith('#fact='))openFact(decodeURIComponent(location.hash.slice(6)));
 })();
