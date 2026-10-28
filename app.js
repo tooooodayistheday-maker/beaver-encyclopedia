@@ -44,9 +44,9 @@
   const pool=facts.filter(f=>f.category!=='河狸事件簿');
   for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}
   const chosen=pool.slice(0,6);
-  const group=duplicate=>`<div class="ticker-group"${duplicate?' aria-hidden="true"':''}>${chosen.map(f=>`<button class="ticker-fact plain" data-open="${esc(f.id)}" data-ticker="true"${duplicate?' tabindex="-1"':''}><span aria-hidden="true">✳</span> ${esc(f.summary)} <span class="ticker-read" aria-hidden="true">↗</span></button>`).join('')}</div>`;
+  const group=duplicate=>`<div class="ticker-group"${duplicate?' aria-hidden="true"':''}>${chosen.map(f=>`<button class="ticker-fact plain" data-open="${esc(f.id)}" data-ticker="true"${duplicate?' tabindex="-1"':''}><span aria-hidden="true">✳</span> ${esc(f.title)}｜${esc(f.summary)} <span class="ticker-read" aria-hidden="true">↗</span></button>`).join('')}</div>`;
   $('#factTicker').innerHTML=group(false)+group(true);
-  const characters=chosen.reduce((total,f)=>total+f.summary.length,0);
+  const characters=chosen.reduce((total,f)=>total+f.title.length+f.summary.length,0);
   $('#factTicker').style.animationDuration=`${Math.max(55,characters*.65)}s`;
  }
  $('#refreshTicker').onclick=()=>{refreshTicker();track('ticker_refresh');};
