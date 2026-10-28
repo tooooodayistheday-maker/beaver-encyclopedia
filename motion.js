@@ -16,4 +16,24 @@
  scene.addEventListener('pointermove',e=>{if(!enabled||!fine.matches)return;const r=scene.getBoundingClientRect();scene.style.setProperty('--scene-x',`${((e.clientX-r.left)/r.width-.5)*7}px`);scene.style.setProperty('--scene-y',`${((e.clientY-r.top)/r.height-.5)*5}px`);});
  scene.addEventListener('pointerleave',()=>{scene.style.setProperty('--scene-x','0px');scene.style.setProperty('--scene-y','0px');});
  document.addEventListener('visibilitychange',()=>root.classList.toggle('tab-hidden',document.hidden));
+ // A small action tied to the river, rather than decoration over the text.
+ const waterButton=document.querySelector('#waterPlay');let splashTimer;
+ waterButton.addEventListener('click',()=>{
+  if(!enabled||reduced.matches){document.querySelector('#motionMessage').textContent='開啟動畫後，可以看看河狸拍水的樣子。';return;}
+  scene.classList.remove('splashing');void scene.offsetWidth;scene.classList.add('splashing');
+  document.querySelector('#motionMessage').textContent='啪！河狸拍拍水面，漣漪散開了。';
+  clearTimeout(splashTimer);splashTimer=setTimeout(()=>scene.classList.remove('splashing'),1600);
+ });
+ // Keep tilts subtle and local to the card being pointed at.
+ document.addEventListener('pointermove',e=>{
+  if(!enabled||!fine.matches||reduced.matches)return;
+  const card=e.target.closest('.card');if(!card)return;const r=card.getBoundingClientRect();
+  card.style.setProperty('--tilt-x',`${-((e.clientY-r.top)/r.height-.5)*3}deg`);
+  card.style.setProperty('--tilt-y',`${((e.clientX-r.left)/r.width-.5)*3}deg`);
+ },{passive:true});
+ document.addEventListener('pointerout',e=>{const card=e.target.closest('.card');if(card&&!card.contains(e.relatedTarget)){card.style.setProperty('--tilt-x','0deg');card.style.setProperty('--tilt-y','0deg');}},{passive:true});
+ const bar=document.querySelector('#pageProgress');let scrollQueued=false;
+ function progress(){const height=root.scrollHeight-innerHeight;bar.style.transform=`scaleX(${height>0?Math.min(1,Math.max(0,scrollY/height)):0})`;scrollQueued=false;}
+ addEventListener('scroll',()=>{if(!scrollQueued){scrollQueued=true;requestAnimationFrame(progress);}},{passive:true});
+ addEventListener('resize',progress,{passive:true});progress();
 })();

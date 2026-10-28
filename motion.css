@@ -17,3 +17,22 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.hero-art .habitat{transform:none}.round-stamp{transform:rotate(14deg)}}
 
 @media(max-width:420px){.nav nav>a{display:none}.nav .brand{font-size:12px}.nav nav{gap:0}}
+/* More visible, purposeful motion. Pause and reduced-motion rules still apply. */
+#pageProgress{position:fixed;top:0;left:0;right:0;height:4px;background:#bd7049;transform:scaleX(0);transform-origin:left;z-index:25;pointer-events:none}
+.beaver-tail{transform-origin:422px 430px;animation:tail-idle 7s ease-in-out infinite}
+.river-birds{animation:birds-drift 9s ease-in-out infinite;transform-origin:center}
+.sun-halo{transform-box:fill-box;transform-origin:center;animation:sun-breathe 7s ease-in-out infinite}
+.water-control{align-self:center;margin:12px 20px 0;border:1px solid #a6b49c;border-radius:30px;background:#f7f4ebc9;color:#224d3e;padding:8px 18px;font-size:14px;display:flex;align-items:center;gap:10px;transition:background .2s,transform .2s}
+.water-control:hover{background:#fff;transform:translateY(-2px)}.water-control span{font-size:19px}.splash-wave{transform-origin:450px 490px;opacity:0;pointer-events:none}.splashing .splash-wave{animation:splash-spread 1.5s ease-out}.splashing .splash-wave.wave-two{animation-delay:.18s}.splashing .beaver-tail{animation:tail-slap 1.2s cubic-bezier(.22,1,.36,1)}
+.motion-message{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+@media(hover:hover) and (pointer:fine){.card.is-visible:hover{transform:perspective(1100px) translateY(-5px) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg))}.story-card:hover .story-art svg{transform:translateY(-5px) rotate(-4deg);transition:transform .5s var(--arrival)}.story-read span{transition:transform .35s var(--arrival)}.story-read:hover span{transform:translate(4px,-4px)}}
+dialog[open] #detailContent>h2{animation:arrive .45s .05s var(--arrival) both}dialog[open] #detailContent>p:not(.eyebrow){animation:arrive .5s .1s var(--arrival) both}.quiz-card h3{animation:arrive .35s var(--arrival)}.answers button{animation:arrive .4s var(--arrival) both}.answers button:nth-child(2){animation-delay:.04s}.answers button:nth-child(3){animation-delay:.08s}.answers button:nth-child(4){animation-delay:.12s}.answers button.correct{animation:answer-highlight .45s ease-out}.story-art:after{transition:transform .7s var(--arrival)}.story-card:hover .story-art:after{transform:scale(1.1)}
+@keyframes tail-idle{0%,65%,100%{transform:rotate(0)}75%{transform:rotate(-4deg)}85%{transform:rotate(2deg)}}
+@keyframes tail-slap{0%,100%{transform:rotate(0)}25%{transform:rotate(-16deg)}42%{transform:rotate(8deg)}65%{transform:rotate(-2deg)}}
+@keyframes splash-spread{0%{opacity:0;transform:scale(.35)}15%{opacity:.85}100%{opacity:0;transform:scale(1.6)}}
+@keyframes birds-drift{0%,100%{transform:translate(0,0)}50%{transform:translate(15px,-6px)}}
+@keyframes sun-breathe{0%,100%{opacity:.25;transform:scale(1)}50%{opacity:.45;transform:scale(1.08)}}
+@keyframes answer-highlight{0%{box-shadow:inset 0 0 0 2px #708f67}100%{box-shadow:inset 0 0 0 0 transparent}}
+.motion-paused .splash-wave{opacity:0!important}.motion-paused .card.is-visible:hover{transform:none}.motion-paused dialog[open] #detailContent>h2,.motion-paused dialog[open] #detailContent>p,.motion-paused .answers button,.motion-paused .quiz-card h3{animation:none;opacity:1;transform:none}.motion-paused .story-card:hover .story-art svg{transform:none}
+@media(prefers-reduced-motion:reduce){.card.is-visible:hover,.story-card:hover .story-art svg,.water-control:hover{transform:none}.splash-wave{opacity:0!important}#pageProgress{display:none}}
+@media(max-width:680px){.hero-art{max-height:none}.water-control{font-size:16px;margin-bottom:6px}}
