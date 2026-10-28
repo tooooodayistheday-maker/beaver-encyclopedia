@@ -1,0 +1,681 @@
+/* Generated from verified, published Threads records. */
+Object.assign(window.BEAVER_SOURCES, {
+  "threads-17913668427280744-source-1": {
+    "name": "歐洲生物資訊研究所",
+    "url": "https://www.ebi.ac.uk/about/our-culture/public-engagement/wetlands-nature-trail/soil/"
+  },
+  "threads-18126728521868971-source-1": {
+    "name": "NOAA",
+    "url": "https://oceanservice.noaa.gov/facts/oceanblue.html"
+  },
+  "threads-18142281385613019-source-1": {
+    "name": "NASA",
+    "url": "https://science.nasa.gov/jupiter/facts/"
+  },
+  "threads-18194457262396370-source-1": {
+    "name": "NASA",
+    "url": "https://science.nasa.gov/saturn/facts/"
+  },
+  "threads-18095304383663978-source-1": {
+    "name": "NOAA",
+    "url": "https://oceanservice.noaa.gov/facts/coral.html"
+  },
+  "threads-18389582314167602-source-1": {
+    "name": "NASA",
+    "url": "https://science.nasa.gov/saturn/facts/"
+  },
+  "threads-18097010357129535-source-1": {
+    "name": "舊金山探索館",
+    "url": "https://annex.exploratorium.edu/cooking/candy/sugar.html"
+  },
+  "threads-18103409957143439-source-1": {
+    "name": "倫敦大學學院",
+    "url": "https://www.ucl.ac.uk/museums-static/digitalegypt/writing/cuneiform.html"
+  },
+  "threads-18095349308386123-source-1": {
+    "name": "美國國家公園管理局",
+    "url": "https://www.nps.gov/elis/learn/historyculture/ellis-island-chronology.htm"
+  },
+  "threads-18132145939769382-source-1": {
+    "name": "維多利亞與亞伯特博物館",
+    "url": "https://www.vam.ac.uk/articles/kimono"
+  },
+  "threads-18098496017410096-source-1": {
+    "name": "維多利亞與亞伯特博物館",
+    "url": "https://www.vam.ac.uk/articles/teapots-through-time"
+  },
+  "threads-17952034731314658-source-1": {
+    "name": "史密森尼國家動物園",
+    "url": "https://nationalzoo.si.edu/animals/beaver"
+  },
+  "threads-18137767828630287-source-1": {
+    "name": "美國國家公園管理局・阿卡迪亞",
+    "url": "https://www.nps.gov/articles/north-american-beaver-acadia.htm"
+  },
+  "threads-17896344531458693-source-1": {
+    "name": "俄勒岡動物園",
+    "url": "https://www.oregonzoo.org/animals/american-beaver"
+  },
+  "threads-18102653102058584-source-1": {
+    "name": "美國國家公園管理局・白令陸橋",
+    "url": "https://www.nps.gov/bela/learn/nature/beaver.htm"
+  },
+  "threads-17905806975354433-source-1": {
+    "name": "美國國家公園管理局・落磯山",
+    "url": "https://www.nps.gov/romo/learn/nature/beavers.htm"
+  },
+  "threads-17891678754617555-source-1": {
+    "name": "密西根大學動物多樣性資料庫・北美河狸",
+    "url": "https://animaldiversity.org/accounts/Castor_canadensis/"
+  },
+  "threads-18093072125200674-source-1": {
+    "name": "密西根大學動物多樣性資料庫・歐亞河狸",
+    "url": "https://animaldiversity.org/accounts/Castor_fiber/"
+  },
+  "threads-18089489276282474-source-1": {
+    "name": "史密森尼國家動物園",
+    "url": "https://nationalzoo.si.edu/animals/beaver"
+  },
+  "threads-18104114801347083-source-1": {
+    "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
+    "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
+  },
+  "threads-18104114801347083-source-2": {
+    "name": "Beavers build planned dams in protected landscape area, while local officials still seeking permits  | Radio Prague International",
+    "url": "https://english.radio.cz/beavers-build-planned-dams-protected-landscape-area-while-local-officials-still-8841536"
+  },
+  "threads-18102080066636871-source-1": {
+    "name": "Parachuting beavers into Idaho's wilderness? Yes, it really happened | Boise State Public Radio",
+    "url": "https://www.boisestatepublicradio.org/environment/2015-01-14/parachuting-beavers-into-idahos-wilderness-yes-it-really-happened"
+  },
+  "threads-18102080066636871-source-2": {
+    "name": "Beavers Once Parachuted into Idaho’s Backcountry",
+    "url": "https://www.smithsonianmag.com/smart-news/time-beavers-parachuted-idahos-backcountry-180953918/"
+  },
+  "threads-18082157564410959-source-1": {
+    "name": "Press release | Media | National Trust",
+    "url": "https://www.nationaltrust.org.uk/services/media/going-wild-historic-first-official-wild-beaver-release-marks-new-era-for-natures-recovery-in-england"
+  },
+  "threads-18082157564410959-source-2": {
+    "name": "Wild release and management of beavers in England  - GOV.UK",
+    "url": "https://www.gov.uk/government/publications/wild-release-and-management-of-beavers-in-england/wild-release-and-management-of-beavers-in-england"
+  },
+  "threads-18494383894108460-source-1": {
+    "name": "Beaver release approved at new Cairngorms National Park sites | NatureScot",
+    "url": "https://www.nature.scot/beaver-release-approved-new-cairngorms-national-park-sites"
+  },
+  "threads-18494383894108460-source-2": {
+    "name": "Beavers arrive in their new Cairngorms National Park home - Beaver Trust",
+    "url": "https://beavertrust.org/beavers-arrive-in-their-new-cairngorms-national-park-home/"
+  },
+  "threads-18494383894108460-source-3": {
+    "name": "Cairngorms National Park | Bringing beavers back to the Cairngorms",
+    "url": "https://cairngorms.co.uk/our-work/bringing-beavers-back-to-the-cairngorms"
+  },
+  "threads-18141363289723251-source-1": {
+    "name": "Scottish Beaver Trial | NatureScot",
+    "url": "https://www.nature.scot/professional-advice/protected-areas-and-species/protected-species/protected-species-z-guide/beavers-scotland/scottish-beaver-trial"
+  },
+  "threads-18141363289723251-source-2": {
+    "name": "3. Environmental Characteristics of the Beaver Policy Areas - Beavers in Scotland: consultation on the strategic environmental assessment - gov.scot",
+    "url": "https://www.gov.scot/publications/consultation-beavers-scotland-strategic-environmental-assessment-environmental-report-2017/pages/4/"
+  }
+});
+window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18089489276282474",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸門牙呈橘色的原因",
+    "summary": "北美河狸的前門牙外觀呈現深橘色，這種特殊的顏色源自於牙齒最外層琺瑯質中所含的大量鐵質。",
+    "body": "北美河狸的前門牙外觀呈現深橘色，這種特殊的顏色源自於牙齒最外層琺瑯質中所含的大量鐵質。\n\n琺瑯質中的鐵成分能夠強化牙齒結構。當北美河狸進行啃咬時，這層富含鐵質的琺瑯質有助於防止門牙發生斷裂或破裂。",
+    "paragraphs": [
+      "北美河狸的前門牙外觀呈現深橘色，這種特殊的顏色源自於牙齒最外層琺瑯質中所含的大量鐵質。",
+      "琺瑯質中的鐵成分能夠強化牙齒結構。當北美河狸進行啃咬時，這層富含鐵質的琺瑯質有助於防止門牙發生斷裂或破裂。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18089489276282474-source-1",
+    "sourceIds": [
+      "threads-18089489276282474-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-28",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DfB9LI4k9Oh",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-18093072125200674",
+    "category": "Threads 河狸短篇",
+    "title": "歐亞河狸後腳的理毛裂爪",
+    "summary": "歐亞河狸後腳內側的兩根趾頭長有特殊的裂爪構造，專門用於梳理身上的毛皮。",
+    "body": "歐亞河狸後腳內側的兩根趾頭長有特殊的裂爪構造，專門用於梳理身上的毛皮。\n\n歐亞河狸會利用後腳的裂爪，將油脂腺分泌的油脂梳理進外層的針毛中。這種行為能使外層毛皮具備防水效果，進而讓內層毛皮保持乾燥。",
+    "paragraphs": [
+      "歐亞河狸後腳內側的兩根趾頭長有特殊的裂爪構造，專門用於梳理身上的毛皮。",
+      "歐亞河狸會利用後腳的裂爪，將油脂腺分泌的油脂梳理進外層的針毛中。這種行為能使外層毛皮具備防水效果，進而讓內層毛皮保持乾燥。"
+    ],
+    "species": "歐亞河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18093072125200674-source-1",
+    "sourceIds": [
+      "threads-18093072125200674-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-27",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/De_YZinmHVR",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-18141363289723251",
+    "category": "河狸事件簿",
+    "title": "英國首例哺乳動物重引入：蘇格蘭納普代爾河狸試驗事件",
+    "summary": "英國首起獲得官方授權的哺乳動物重引入計畫，是一項將歐洲河狸放歸野生環境並進行科學監測的試驗事件。研究團隊將河狸釋放到野外…",
+    "body": "英國首起獲得官方授權的哺乳動物重引入計畫，是一項將歐洲河狸放歸野生環境並進行科學監測的試驗事件。研究團隊將河狸釋放到野外棲地中，試圖觀察其生態影響與適應過程。這項放歸試驗標誌著英國近代野生動物管理與物種重引入制度的重要嘗試，為後續野生動物保育政策提供實證基礎。\n\n該事件發生的地點位於英國蘇格蘭阿蓋爾郡的納普代爾森林。2008年5月，蘇格蘭政府正式給予批准許可，同意皇家蘇格蘭動物學會與蘇格蘭野生動物信託基金會於納普代爾森林開展歐洲河狸的試驗性重引入。政府同時規定該試驗須設立嚴格條件，並由蘇格蘭自然遺產機構負責協調獨立科學監測。\n\n試驗經過自2009年5月正式展開放歸作業，研究團隊在納普代爾森林先後放歸了16隻源自挪威的歐洲河狸，包含2009年放歸的三個家族群體，以及2010年陸續補放的兩對個體與單隻個體。整個獨立科學監測計畫從2009年5月持續執行至2014年5月，全程詳細記錄並評估河狸在野外棲地的活動軌跡與適應狀況。\n\n人類社會對此事件採取了極為全面且跨領域的獨立監測反應。蘇格蘭自然遺產機構聯合牛津大學、阿蓋爾漁業信託、詹姆斯赫頓研究所及史特靈大學等多個學術機構，針對河狸生態、水獺、魚類、水生植物、水文與社會經濟進行評估；皇家獸醫學院、蘇格蘭環境保護局與歷史環境機構亦參與了健康、水質與歷史遺蹟監測。\n\n事件後續發展方面，蘇格蘭政府於2016年11月正式宣佈允許河狸繼續留在蘇格蘭棲息。然而，根據2016年秋季進行的試驗後續管理調查顯示，納普代爾試驗區內的河狸數量已減少至僅剩8至10隻，其中包括二至三個繁殖對以及當年初生的幼崽，顯示試驗區野外種群規模相當脆弱且面臨生存挑戰。\n\n此事件顯示河狸的生態影響並非無條件或永遠有益。納普代爾河狸種群來自基因多樣性較低的挪威個體，面臨高近親交配風險，若無政策補充個體則存在區域性滅絕威脅；此外，河狸活動對農業與基礎設施有潛在衝突，監測中亦將水獺等原生哺乳動物作為獨立物種評估，明確區分不同物種的生態角色。",
+    "paragraphs": [
+      "英國首起獲得官方授權的哺乳動物重引入計畫，是一項將歐洲河狸放歸野生環境並進行科學監測的試驗事件。研究團隊將河狸釋放到野外棲地中，試圖觀察其生態影響與適應過程。這項放歸試驗標誌著英國近代野生動物管理與物種重引入制度的重要嘗試，為後續野生動物保育政策提供實證基礎。",
+      "該事件發生的地點位於英國蘇格蘭阿蓋爾郡的納普代爾森林。2008年5月，蘇格蘭政府正式給予批准許可，同意皇家蘇格蘭動物學會與蘇格蘭野生動物信託基金會於納普代爾森林開展歐洲河狸的試驗性重引入。政府同時規定該試驗須設立嚴格條件，並由蘇格蘭自然遺產機構負責協調獨立科學監測。",
+      "試驗經過自2009年5月正式展開放歸作業，研究團隊在納普代爾森林先後放歸了16隻源自挪威的歐洲河狸，包含2009年放歸的三個家族群體，以及2010年陸續補放的兩對個體與單隻個體。整個獨立科學監測計畫從2009年5月持續執行至2014年5月，全程詳細記錄並評估河狸在野外棲地的活動軌跡與適應狀況。",
+      "人類社會對此事件採取了極為全面且跨領域的獨立監測反應。蘇格蘭自然遺產機構聯合牛津大學、阿蓋爾漁業信託、詹姆斯赫頓研究所及史特靈大學等多個學術機構，針對河狸生態、水獺、魚類、水生植物、水文與社會經濟進行評估；皇家獸醫學院、蘇格蘭環境保護局與歷史環境機構亦參與了健康、水質與歷史遺蹟監測。",
+      "事件後續發展方面，蘇格蘭政府於2016年11月正式宣佈允許河狸繼續留在蘇格蘭棲息。然而，根據2016年秋季進行的試驗後續管理調查顯示，納普代爾試驗區內的河狸數量已減少至僅剩8至10隻，其中包括二至三個繁殖對以及當年初生的幼崽，顯示試驗區野外種群規模相當脆弱且面臨生存挑戰。",
+      "此事件顯示河狸的生態影響並非無條件或永遠有益。納普代爾河狸種群來自基因多樣性較低的挪威個體，面臨高近親交配風險，若無政策補充個體則存在區域性滅絕威脅；此外，河狸活動對農業與基礎設施有潛在衝突，監測中亦將水獺等原生哺乳動物作為獨立物種評估，明確區分不同物種的生態角色。"
+    ],
+    "species": "英國蘇格蘭阿蓋爾納普代爾森林",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18141363289723251-source-1",
+    "sourceIds": [
+      "threads-18141363289723251-source-1",
+      "threads-18141363289723251-source-2"
+    ],
+    "icon": "home",
+    "publishedDate": "2026-10-26",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/De8zx25mI2H",
+    "archive": true,
+    "eventDate": "2008-2016"
+  },
+  {
+    "id": "threads-17891678754617555",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸築壩形狀與水流速度",
+    "summary": "北美河狸在建造水壩時，會根據水流的速度來調整大壩的結構設計。",
+    "body": "北美河狸在建造水壩時，會根據水流的速度來調整大壩的結構設計。\n\n在水流較為緩慢的溪流中，北美河狸會將水壩建造呈直線形；而在水流湍急的水域，牠們則會將水壩築成帶有弧度的彎曲形狀。這種彎曲結構能提供更好的穩定性，防止水壩被強大的水流沖毀。",
+    "paragraphs": [
+      "北美河狸在建造水壩時，會根據水流的速度來調整大壩的結構設計。",
+      "在水流較為緩慢的溪流中，北美河狸會將水壩建造呈直線形；而在水流湍急的水域，牠們則會將水壩築成帶有弧度的彎曲形狀。這種彎曲結構能提供更好的穩定性，防止水壩被強大的水流沖毀。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-17891678754617555-source-1",
+    "sourceIds": [
+      "threads-17891678754617555-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-26",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/De8zrMbmFs9",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-18494383894108460",
+    "category": "河狸事件簿",
+    "title": "缺席四百年後重返家園：蘇格蘭凱恩戈姆國家公園的河狸重引入事件",
+    "summary": "2023年12月18日，蘇格蘭政府官員與自然保護團體合作，在蘇格蘭凱恩戈姆國家公園的羅斯謬克等地放歸了一對歐亞河狸。這是…",
+    "body": "2023年12月18日，蘇格蘭政府官員與自然保護團體合作，在蘇格蘭凱恩戈姆國家公園的羅斯謬克等地放歸了一對歐亞河狸。這是該地區在消失約四百年後，首次迎來河狸回歸本土棲地。本次行動由國家公園管理局、當地土地管理者與河狸信託基金會共同執行，屬於蘇格蘭首次在已知棲地範圍之外進行的合法野外移殖野放。官方與保育機構期望藉由重新引入這項關鍵物種，恢復當地水域與濕地生態環境。\n\n本事件發生於英國蘇格蘭高地的凱恩戈姆國家公園斯佩河上游流域。蘇格蘭自然署於2023年12月5日正式批准了國家公園管理局的許可證申請，允許在第一年內放歸最多六個河狸家族，並在五年許可期內累積放歸最多十五個家族。斯佩河流域經過評估被認定為極適合河狸生存的環境，且人獸衝突風險較低，因此成為蘇格蘭河狸恢復策略中的重點推動區域。\n\n本次野放行動的起因，是為了擴大河狸在蘇格蘭的分佈範圍並處理棲地衝突。被移殖的河狸原本生活在泰河等流域，因對優良農地造成負面影響且現場無法有效減緩，遂依法進行捕捉。河狸被捕獲後先送往西洛西安的五姊妹動物園進行健康篩檢與獸醫檢查，確保無疾病風險後，再運送至國家公園野放。野放過程限制現場人數，以盡量減少動物所承受的壓力。\n\n在野放前開展的公眾諮詢中，超過五百名人士參與，其中逾四分之三表達支援。然而，當地的農民與小農也對河狸可能引發的耕地浸水與排水破壞提出了實質疑慮。為了回應社會關切與保障周邊土地營運，國家公園管理局與自然署制定了配套的監測與減緩計畫，包含專人聯絡視窗與資金補貼，提供樹木包裹保護與水壩管理等措施，以協調農業與生態保護之間的衝突。\n\n儘管河狸被視為能創造濕地與改善水質的生態工程師，但其生態影響仍具條件限制，並非在所有情境下皆百利而無一害。其築壩倒樹活動若缺乏管理，可能對特定農地與基礎設施產生區域性負面衝擊。相關單位強調，野放後的河狸族群狀況與周邊環境變化需透過長期巡邏及相機監測逐年核實，不可將報導當時的預期效果或推測誤認為已證實的最終定論。",
+    "paragraphs": [
+      "2023年12月18日，蘇格蘭政府官員與自然保護團體合作，在蘇格蘭凱恩戈姆國家公園的羅斯謬克等地放歸了一對歐亞河狸。這是該地區在消失約四百年後，首次迎來河狸回歸本土棲地。本次行動由國家公園管理局、當地土地管理者與河狸信託基金會共同執行，屬於蘇格蘭首次在已知棲地範圍之外進行的合法野外移殖野放。官方與保育機構期望藉由重新引入這項關鍵物種，恢復當地水域與濕地生態環境。",
+      "本事件發生於英國蘇格蘭高地的凱恩戈姆國家公園斯佩河上游流域。蘇格蘭自然署於2023年12月5日正式批准了國家公園管理局的許可證申請，允許在第一年內放歸最多六個河狸家族，並在五年許可期內累積放歸最多十五個家族。斯佩河流域經過評估被認定為極適合河狸生存的環境，且人獸衝突風險較低，因此成為蘇格蘭河狸恢復策略中的重點推動區域。",
+      "本次野放行動的起因，是為了擴大河狸在蘇格蘭的分佈範圍並處理棲地衝突。被移殖的河狸原本生活在泰河等流域，因對優良農地造成負面影響且現場無法有效減緩，遂依法進行捕捉。河狸被捕獲後先送往西洛西安的五姊妹動物園進行健康篩檢與獸醫檢查，確保無疾病風險後，再運送至國家公園野放。野放過程限制現場人數，以盡量減少動物所承受的壓力。",
+      "在野放前開展的公眾諮詢中，超過五百名人士參與，其中逾四分之三表達支援。然而，當地的農民與小農也對河狸可能引發的耕地浸水與排水破壞提出了實質疑慮。為了回應社會關切與保障周邊土地營運，國家公園管理局與自然署制定了配套的監測與減緩計畫，包含專人聯絡視窗與資金補貼，提供樹木包裹保護與水壩管理等措施，以協調農業與生態保護之間的衝突。",
+      "儘管河狸被視為能創造濕地與改善水質的生態工程師，但其生態影響仍具條件限制，並非在所有情境下皆百利而無一害。其築壩倒樹活動若缺乏管理，可能對特定農地與基礎設施產生區域性負面衝擊。相關單位強調，野放後的河狸族群狀況與周邊環境變化需透過長期巡邏及相機監測逐年核實，不可將報導當時的預期效果或推測誤認為已證實的最終定論。"
+    ],
+    "species": "英國蘇格蘭凱恩戈姆國家公園（Cairngorms National Park, Scotland）",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18494383894108460-source-1",
+    "sourceIds": [
+      "threads-18494383894108460-source-1",
+      "threads-18494383894108460-source-2",
+      "threads-18494383894108460-source-3"
+    ],
+    "icon": "home",
+    "publishedDate": "2026-10-25",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/De6O__DIJjo",
+    "archive": true,
+    "eventDate": "2023-12"
+  },
+  {
+    "id": "threads-17905806975354433",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸幼崽的家庭分工",
+    "summary": "北美河狸的幼崽在出生後，會與父母一同生活在巢穴中，直到大約兩歲時才會離開獨立。",
+    "body": "北美河狸的幼崽在出生後，會與父母一同生活在巢穴中，直到大約兩歲時才會離開獨立。\n\n在這段留巢期間，幼年北美河狸會參與家庭分工，不僅協助收集食物與建造水壩，還會幫忙照顧新生的幼崽。",
+    "paragraphs": [
+      "北美河狸的幼崽在出生後，會與父母一同生活在巢穴中，直到大約兩歲時才會離開獨立。",
+      "在這段留巢期間，幼年北美河狸會參與家庭分工，不僅協助收集食物與建造水壩，還會幫忙照顧新生的幼崽。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-17905806975354433-source-1",
+    "sourceIds": [
+      "threads-17905806975354433-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-25",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/De6O6MLoASB",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-18102653102058584",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸遭遇危險時的拍尾行為",
+    "summary": "當周圍有危險接近時，成年的北美河狸會使用尾巴拍擊水面。",
+    "body": "當周圍有危險接近時，成年的北美河狸會使用尾巴拍擊水面。\n\n這項動作是用來向家族內的其他成員傳遞警訊，提醒大家逃入巢穴中。\n\n透過這種行為，北美河狸家族可以在遭遇威脅時迅速返回巢穴躲避。",
+    "paragraphs": [
+      "當周圍有危險接近時，成年的北美河狸會使用尾巴拍擊水面。",
+      "這項動作是用來向家族內的其他成員傳遞警訊，提醒大家逃入巢穴中。",
+      "透過這種行為，北美河狸家族可以在遭遇威脅時迅速返回巢穴躲避。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18102653102058584-source-1",
+    "sourceIds": [
+      "threads-18102653102058584-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-24",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/De3qJDNnZmI",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-18082157564410959",
+    "category": "河狸事件簿",
+    "title": "四隻河狸回到野外，放歸之後誰來管",
+    "summary": "2025年3月5日，英國國民信託在英格蘭多塞特郡的Purbeck放出兩對歐亞河狸。牠們不是被安置在圍欄內展示，而是獲準在…",
+    "body": "2025年3月5日，英國國民信託在英格蘭多塞特郡的Purbeck放出兩對歐亞河狸。牠們不是被安置在圍欄內展示，而是獲準在野外生活。這是一則歷史事件回顧：值得注意的，不只是四隻動物搬家，而是人類如何為牠們重返開放水域訂下條件。\n\n這批河狸來自蘇格蘭泰河流域，經過健康檢查與放歸前照護後，抵達Little Sea湖。放歸地周圍的柳林提供食物；國民信託也說明，湖水原本就夠深，牠們初期不必築壩。河狸可能改變棲地，卻不代表每次放歸，都會立刻出現一座新水壩。\n\n放歸之前先有許可。政府檔案記載，國民信託在2025年2月10日取得Purbeck計畫的野放許可。新的管理方向允許合格計畫提出申請，讓河狸在有管理安排的情況下自然擴充套件活動範圍；這不等於任何人都可以自行抓來幾隻，放進附近溪流。\n\n許可制度要求的不只有適合動物的環境。申請者還要說明環境效益、與地方地主及管理者的溝通，以及如何避免或處理負面影響。新獲許可的計畫通常須涵蓋至少十年，並安排轉入長期管理的方式，讓農民、地主與社群在放歸後仍有支援。\n\n這個故事也不能寫成「英格蘭此前完全沒有野生河狸」。政府同一份檔案明確指出，部分河流流域早已有野外生活、繁殖的族群；德文郡River Otter的族群，也在先前試驗後獲準留下並自然擴充套件。這次的重點是新許可與管理方式，不是把既有族群從歷史中抹掉。\n\n河狸能帶來棲地效益，也可能與農業、漁業或設施管理發生衝突。政府檔案因此將地方支援、風險評估及必要時的持照管理列入制度。四隻河狸獲準進入湖中，是故事的起點；能否長期共處，還要靠後續管理。本篇依當時放歸公告與政府檔案回顧，不宣稱已查證牠們在2026年的個別近況。",
+    "paragraphs": [
+      "2025年3月5日，英國國民信託在英格蘭多塞特郡的Purbeck放出兩對歐亞河狸。牠們不是被安置在圍欄內展示，而是獲準在野外生活。這是一則歷史事件回顧：值得注意的，不只是四隻動物搬家，而是人類如何為牠們重返開放水域訂下條件。",
+      "這批河狸來自蘇格蘭泰河流域，經過健康檢查與放歸前照護後，抵達Little Sea湖。放歸地周圍的柳林提供食物；國民信託也說明，湖水原本就夠深，牠們初期不必築壩。河狸可能改變棲地，卻不代表每次放歸，都會立刻出現一座新水壩。",
+      "放歸之前先有許可。政府檔案記載，國民信託在2025年2月10日取得Purbeck計畫的野放許可。新的管理方向允許合格計畫提出申請，讓河狸在有管理安排的情況下自然擴充套件活動範圍；這不等於任何人都可以自行抓來幾隻，放進附近溪流。",
+      "許可制度要求的不只有適合動物的環境。申請者還要說明環境效益、與地方地主及管理者的溝通，以及如何避免或處理負面影響。新獲許可的計畫通常須涵蓋至少十年，並安排轉入長期管理的方式，讓農民、地主與社群在放歸後仍有支援。",
+      "這個故事也不能寫成「英格蘭此前完全沒有野生河狸」。政府同一份檔案明確指出，部分河流流域早已有野外生活、繁殖的族群；德文郡River Otter的族群，也在先前試驗後獲準留下並自然擴充套件。這次的重點是新許可與管理方式，不是把既有族群從歷史中抹掉。",
+      "河狸能帶來棲地效益，也可能與農業、漁業或設施管理發生衝突。政府檔案因此將地方支援、風險評估及必要時的持照管理列入制度。四隻河狸獲準進入湖中，是故事的起點；能否長期共處，還要靠後續管理。本篇依當時放歸公告與政府檔案回顧，不宣稱已查證牠們在2026年的個別近況。"
+    ],
+    "species": "英國英格蘭・Purbeck",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18082157564410959-source-1",
+    "sourceIds": [
+      "threads-18082157564410959-source-1",
+      "threads-18082157564410959-source-2"
+    ],
+    "icon": "home",
+    "publishedDate": "2026-10-24",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/De4APy9HTfR",
+    "archive": true,
+    "eventDate": "2025年3月歷史事件回顧"
+  },
+  {
+    "id": "threads-18102080066636871",
+    "category": "河狸事件簿",
+    "title": "沒有公路，河狸就搭降落傘搬家",
+    "summary": "1948年，美國愛達荷州曾把河狸裝進木箱，繫上降落傘，再由飛機送入偏遠山區。這不是今天發生的新事件，而是Boise St…",
+    "body": "1948年，美國愛達荷州曾把河狸裝進木箱，繫上降落傘，再由飛機送入偏遠山區。這不是今天發生的新事件，而是Boise State Public Radio於2015年重新報導的一段保育往事。當年的工作人員想解決人與河狸的衝突，最後採取的辦法，是讓河狸從空中搬家。\n\n故事的起點是麥考爾與佩埃特湖一帶。二戰後，人們到這裡興建住宅，也進入河狸原本活動的地方。人類希望把河狸遷走，但另找合適棲地並不容易。工作人員Elmo Heter看中了張伯倫盆地：那裡遠離住家，卻缺乏道路，如何把活河狸送進去，成了真正的難題。\n\n用馱獸運送也不是輕鬆的替代方案。報導引述Heter的紀錄，馬與騾子背著會掙扎、帶有氣味的河狸時，容易受驚，增加搬運與動物損失的風險。Heter於是想到戰後剩餘的降落傘。不過，第一版柳條箱很快遇到麻煩：河狸一進箱就開始啃，可能還沒落地便咬出缺口。\n\n後來他改用碰地能開啟的木箱，先以配重測試，再讓一隻被取名Geronimo的老公河狸參與反覆試降。正式遷移時，Geronimo與三隻母河狸成為先行者。兩篇報導都記載，當年共空投76隻河狸，其中一隻沒有活過降落；這項計畫並非毫無損失的冒險。\n\nHeter的紀錄認為，這個方法節省工時，也改善了運送過程中的動物死亡問題。報導另提到，1948年空投四隻河狸的估算費用約30美元。這個數字反映的是當年的估算，不能直接當作現在的運輸成本；而報導中對方法的正面評價，也不等於所有地點都適合照做。\n\n這段故事的結尾仍有查核界線。2015年受訪的官員並不確定計畫為何未在1948年後繼續，只推測可能已達成當地目標。他當時也認為那些河狸的後代很可能仍在當地生活，並表示類似空投如今極不可能重演。這是當年的說法，本篇沒有取得足以確認2026年族群現況的新資料。",
+    "paragraphs": [
+      "1948年，美國愛達荷州曾把河狸裝進木箱，繫上降落傘，再由飛機送入偏遠山區。這不是今天發生的新事件，而是Boise State Public Radio於2015年重新報導的一段保育往事。當年的工作人員想解決人與河狸的衝突，最後採取的辦法，是讓河狸從空中搬家。",
+      "故事的起點是麥考爾與佩埃特湖一帶。二戰後，人們到這裡興建住宅，也進入河狸原本活動的地方。人類希望把河狸遷走，但另找合適棲地並不容易。工作人員Elmo Heter看中了張伯倫盆地：那裡遠離住家，卻缺乏道路，如何把活河狸送進去，成了真正的難題。",
+      "用馱獸運送也不是輕鬆的替代方案。報導引述Heter的紀錄，馬與騾子背著會掙扎、帶有氣味的河狸時，容易受驚，增加搬運與動物損失的風險。Heter於是想到戰後剩餘的降落傘。不過，第一版柳條箱很快遇到麻煩：河狸一進箱就開始啃，可能還沒落地便咬出缺口。",
+      "後來他改用碰地能開啟的木箱，先以配重測試，再讓一隻被取名Geronimo的老公河狸參與反覆試降。正式遷移時，Geronimo與三隻母河狸成為先行者。兩篇報導都記載，當年共空投76隻河狸，其中一隻沒有活過降落；這項計畫並非毫無損失的冒險。",
+      "Heter的紀錄認為，這個方法節省工時，也改善了運送過程中的動物死亡問題。報導另提到，1948年空投四隻河狸的估算費用約30美元。這個數字反映的是當年的估算，不能直接當作現在的運輸成本；而報導中對方法的正面評價，也不等於所有地點都適合照做。",
+      "這段故事的結尾仍有查核界線。2015年受訪的官員並不確定計畫為何未在1948年後繼續，只推測可能已達成當地目標。他當時也認為那些河狸的後代很可能仍在當地生活，並表示類似空投如今極不可能重演。這是當年的說法，本篇沒有取得足以確認2026年族群現況的新資料。"
+    ],
+    "species": "美國愛達荷州・張伯倫盆地",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18102080066636871-source-1",
+    "sourceIds": [
+      "threads-18102080066636871-source-1",
+      "threads-18102080066636871-source-2"
+    ],
+    "icon": "home",
+    "publishedDate": "2026-10-23",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/De1yvViHbJK",
+    "archive": true,
+    "eventDate": "1948年歷史事件，2015年報導回顧"
+  },
+  {
+    "id": "threads-17896344531458693",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸不吃木頭的事實",
+    "summary": "北美河狸雖然會啃咬並咬倒大型樹木，但牠們實際上並不以木頭為食。",
+    "body": "北美河狸雖然會啃咬並咬倒大型樹木，但牠們實際上並不以木頭為食。\n\n北美河狸真正食用的是樹木與木本灌木多汁的綠色內皮，以及塊莖狀水生植物的根部。牠們咬倒樹木，主要是為了取得這些食物與築巢材料。",
+    "paragraphs": [
+      "北美河狸雖然會啃咬並咬倒大型樹木，但牠們實際上並不以木頭為食。",
+      "北美河狸真正食用的是樹木與木本灌木多汁的綠色內皮，以及塊莖狀水生植物的根部。牠們咬倒樹木，主要是為了取得這些食物與築巢材料。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-17896344531458693-source-1",
+    "sourceIds": [
+      "threads-17896344531458693-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-23",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/De1FT3NoFfu",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-18137767828630287",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸的水下嘴部構造",
+    "summary": "北美河狸可以在水下搬運建築材料與食物，卻不會因此溺水。",
+    "body": "北美河狸可以在水下搬運建築材料與食物，卻不會因此溺水。\n\n牠們的嘴部具有可在浸入水中時關閉的特殊瓣膜，且嘴唇能夠在巨大的前門牙後方閉合。這種構造讓北美河狸能在水中運送材料與食物，同時避免溺水。",
+    "paragraphs": [
+      "北美河狸可以在水下搬運建築材料與食物，卻不會因此溺水。",
+      "牠們的嘴部具有可在浸入水中時關閉的特殊瓣膜，且嘴唇能夠在巨大的前門牙後方閉合。這種構造讓北美河狸能在水中運送材料與食物，同時避免溺水。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18137767828630287-source-1",
+    "sourceIds": [
+      "threads-18137767828630287-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-22",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DeygWaFkxGi",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-18104114801347083",
+    "category": "河狸事件簿",
+    "title": "人類還在辦許可，河狸先讓濕地回來了",
+    "summary": "2025年1月，捷克布拉格國際廣播報導：Brdy保護區的一群河狸築起數座壩，讓原本打算由人類推動的濕地復育出現意外進展。…",
+    "body": "2025年1月，捷克布拉格國際廣播報導：Brdy保護區的一群河狸築起數座壩，讓原本打算由人類推動的濕地復育出現意外進展。這不是河狸受僱施工，而是牠們改變水流的行為，碰巧符合當地復育目標。以下按當時資料整理，不當作今天的新訊息。\n\n背景｜為什麼這裡需要水？\n\n當地曾是軍事基地。軍方過去挖出的旁通排水溝，目的在把水排走；保育人員後來希望扭轉這種狀態、恢復濕地。河狸選中的築壩位置，正好就在這條排水溝上。重點不是造出大型水庫，而是改變這片土地留住水的方式。\n\n經過｜人類的程式還沒完成\n\n當時管理單位已取得復育計畫核准，但仍須處理土地權屬協調與建築許可。報導說，軍事林業管理單位與伏爾塔瓦河流域管理單位還在協商時，河狸已築起自然壩，形成復育需要的濕地條件。「計畫獲準」和「取得全部施工許可」在這裡是兩件事。\n\n金額｜「省下三千萬」代表什麼？\n\n捷克自然保育機關在2025年2月11日文章中，將避免的支出表述為三千萬捷克克朗。這是機關對當地復育計畫節省支出的說明，不是現金收入或河狸工程的市場報價。本文保留原幣與來源日期，不換算成今天匯率，也不把它當成經獨立審計的結算數。\n\n後續｜河狸不是在每個地方都帶來好處\n\n報導記載，保育人員認為新濕地與水池有利於石螯蝦、青蛙等生物。但同篇也舉出另一地區的衝突：河狸活動曾讓農地淹水、鐵路附近積水。因此，Brdy的有利結果不能直接套用到所有河道；土地用途與周邊設施，會影響人類如何評價同樣的築壩行為。\n\n查核界線｜這是一則歷史事件整理\n\n本篇對照2025年1月31日的廣播報導，以及同年2月11日的保育機關文章。可以確認的是當時的築壩、濕地形成與官方說明；本文沒有取得2026年的現場調查、工程驗收或最新財務檔案，因此不聲稱這片濕地目前的面積、生態與維護費用仍完全相同。",
+    "paragraphs": [
+      "2025年1月，捷克布拉格國際廣播報導：Brdy保護區的一群河狸築起數座壩，讓原本打算由人類推動的濕地復育出現意外進展。這不是河狸受僱施工，而是牠們改變水流的行為，碰巧符合當地復育目標。以下按當時資料整理，不當作今天的新訊息。",
+      "背景｜為什麼這裡需要水？\n\n當地曾是軍事基地。軍方過去挖出的旁通排水溝，目的在把水排走；保育人員後來希望扭轉這種狀態、恢復濕地。河狸選中的築壩位置，正好就在這條排水溝上。重點不是造出大型水庫，而是改變這片土地留住水的方式。",
+      "經過｜人類的程式還沒完成\n\n當時管理單位已取得復育計畫核准，但仍須處理土地權屬協調與建築許可。報導說，軍事林業管理單位與伏爾塔瓦河流域管理單位還在協商時，河狸已築起自然壩，形成復育需要的濕地條件。「計畫獲準」和「取得全部施工許可」在這裡是兩件事。",
+      "金額｜「省下三千萬」代表什麼？\n\n捷克自然保育機關在2025年2月11日文章中，將避免的支出表述為三千萬捷克克朗。這是機關對當地復育計畫節省支出的說明，不是現金收入或河狸工程的市場報價。本文保留原幣與來源日期，不換算成今天匯率，也不把它當成經獨立審計的結算數。",
+      "後續｜河狸不是在每個地方都帶來好處\n\n報導記載，保育人員認為新濕地與水池有利於石螯蝦、青蛙等生物。但同篇也舉出另一地區的衝突：河狸活動曾讓農地淹水、鐵路附近積水。因此，Brdy的有利結果不能直接套用到所有河道；土地用途與周邊設施，會影響人類如何評價同樣的築壩行為。",
+      "查核界線｜這是一則歷史事件整理\n\n本篇對照2025年1月31日的廣播報導，以及同年2月11日的保育機關文章。可以確認的是當時的築壩、濕地形成與官方說明；本文沒有取得2026年的現場調查、工程驗收或最新財務檔案，因此不聲稱這片濕地目前的面積、生態與維護費用仍完全相同。"
+    ],
+    "species": "捷克・Brdy保護區",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18104114801347083-source-1",
+    "sourceIds": [
+      "threads-18104114801347083-source-1",
+      "threads-18104114801347083-source-2"
+    ],
+    "icon": "home",
+    "publishedDate": "2026-10-22",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DeygOQTE1r5",
+    "archive": true,
+    "eventDate": "2025年1月報導的歷史事件"
+  },
+  {
+    "id": "threads-17952034731314658",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸在冰下的作息週期",
+    "summary": "在冬天池塘結冰的地區，北美河狸會長時間待在冰封的巢穴或水下活動。由於巢穴內與水中的光線始終保持微弱且恆定，無法察覺日出與…",
+    "body": "在冬天池塘結冰的地區，北美河狸會長時間待在冰封的巢穴或水下活動。由於巢穴內與水中的光線始終保持微弱且恆定，無法察覺日出與日落。\n\n在缺乏太陽光線作為指示的情況下，北美河狸的活動不再與太陽日同步，其晝夜節律會發生改變。這會使北美河狸單個活動週期的長度變長，介於26至29小時之間。",
+    "paragraphs": [
+      "在冬天池塘結冰的地區，北美河狸會長時間待在冰封的巢穴或水下活動。由於巢穴內與水中的光線始終保持微弱且恆定，無法察覺日出與日落。",
+      "在缺乏太陽光線作為指示的情況下，北美河狸的活動不再與太陽日同步，其晝夜節律會發生改變。這會使北美河狸單個活動週期的長度變長，介於26至29小時之間。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-17952034731314658-source-1",
+    "sourceIds": [
+      "threads-17952034731314658-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-21",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/Dev7phegflP",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-18098496017410096",
+    "category": "萬物冷知識",
+    "title": "早期歐洲茶壺的外型設計",
+    "summary": "歐洲最早出現的茶壺，在外型設計上與當時的咖啡壺非常相似。它們具有漸窄的圓柱形壺身與錐形壺蓋，壺嘴也常與把手呈直角相交。",
+    "body": "歐洲最早出現的茶壺，在外型設計上與當時的咖啡壺非常相似。它們具有漸窄的圓柱形壺身與錐形壺蓋，壺嘴也常與把手呈直角相交。\n\n英國已知最早的銀茶壺，其尺寸與形狀和當時的咖啡壺幾乎完全相同。若沒有壺身上的刻字，很難單從外觀判斷該容器是用於飲茶還是咖啡。",
+    "paragraphs": [
+      "歐洲最早出現的茶壺，在外型設計上與當時的咖啡壺非常相似。它們具有漸窄的圓柱形壺身與錐形壺蓋，壺嘴也常與把手呈直角相交。",
+      "英國已知最早的銀茶壺，其尺寸與形狀和當時的咖啡壺幾乎完全相同。若沒有壺身上的刻字，很難單從外觀判斷該容器是用於飲茶還是咖啡。"
+    ],
+    "species": "Threads 冷知識",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18098496017410096-source-1",
+    "sourceIds": [
+      "threads-18098496017410096-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-20",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DetWxu9GYmo",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-18132145939769382",
+    "category": "萬物冷知識",
+    "title": "和服紫色的寓意與紫草根",
+    "summary": "在日本傳統和服中，色彩常帶有詩意與象徵意義。其中紫色被用來比喻不渝的愛。",
+    "body": "在日本傳統和服中，色彩常帶有詩意與象徵意義。其中紫色被用來比喻不渝的愛。\n\n這個象徵意象源自用於製作紫色染料的植物「紫草」。由於紫草具有非常長的根部，人們便將這種植物根部的特徵，延伸為情感永恆綿長的涵義。",
+    "paragraphs": [
+      "在日本傳統和服中，色彩常帶有詩意與象徵意義。其中紫色被用來比喻不渝的愛。",
+      "這個象徵意象源自用於製作紫色染料的植物「紫草」。由於紫草具有非常長的根部，人們便將這種植物根部的特徵，延伸為情感永恆綿長的涵義。"
+    ],
+    "species": "Threads 冷知識",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18132145939769382-source-1",
+    "sourceIds": [
+      "threads-18132145939769382-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-19",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DerPnJBknaO",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-18095349308386123",
+    "category": "萬物冷知識",
+    "title": "埃利斯島的主權劃分",
+    "summary": "美國埃利斯島的主權由紐約州與紐澤西州共同劃分。",
+    "body": "美國埃利斯島的主權由紐約州與紐澤西州共同劃分。\n\n根據美國聯邦最高法院的裁決，紐約州保有該島最初的 3.3 英畝土地，而其餘透過填海造陸增加的 24 英畝區域，主權則歸屬於紐澤西州。",
+    "paragraphs": [
+      "美國埃利斯島的主權由紐約州與紐澤西州共同劃分。",
+      "根據美國聯邦最高法院的裁決，紐約州保有該島最初的 3.3 英畝土地，而其餘透過填海造陸增加的 24 英畝區域，主權則歸屬於紐澤西州。"
+    ],
+    "species": "Threads 冷知識",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18095349308386123-source-1",
+    "sourceIds": [
+      "threads-18095349308386123-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-18",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DeoNRXRktcJ",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-18103409957143439",
+    "category": "萬物冷知識",
+    "title": "楔形文字的名稱由來",
+    "summary": "古代近東使用的「楔形文字」（cuneiform），其名稱源自拉丁文中的「楔子」（cuneus）。",
+    "body": "古代近東使用的「楔形文字」（cuneiform），其名稱源自拉丁文中的「楔子」（cuneus）。\n\n這種文字主要的書寫載體是泥板。當時人們在記錄時，會使用楔狀工具將符號壓刻在泥板上，因而形成了這種字形特徵。",
+    "paragraphs": [
+      "古代近東使用的「楔形文字」（cuneiform），其名稱源自拉丁文中的「楔子」（cuneus）。",
+      "這種文字主要的書寫載體是泥板。當時人們在記錄時，會使用楔狀工具將符號壓刻在泥板上，因而形成了這種字形特徵。"
+    ],
+    "species": "Threads 冷知識",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18103409957143439-source-1",
+    "sourceIds": [
+      "threads-18103409957143439-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-17",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DelodyhEp_m",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-18097010357129535",
+    "category": "萬物冷知識",
+    "title": "蔗糖結晶的真實形狀",
+    "summary": "乾燥砂糖的顆粒看起來像小方塊，但在顯微鏡下，蔗糖晶體其實不算標準的立方體。",
+    "body": "乾燥砂糖的顆粒看起來像小方塊，但在顯微鏡下，蔗糖晶體其實不算標準的立方體。\n\n它們呈現細長的形狀，兩端帶有傾斜的角度。這些看似普通的小顆粒，是蔗糖分子規則排列形成的晶體。",
+    "paragraphs": [
+      "乾燥砂糖的顆粒看起來像小方塊，但在顯微鏡下，蔗糖晶體其實不算標準的立方體。",
+      "它們呈現細長的形狀，兩端帶有傾斜的角度。這些看似普通的小顆粒，是蔗糖分子規則排列形成的晶體。"
+    ],
+    "species": "Threads 冷知識",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18097010357129535-source-1",
+    "sourceIds": [
+      "threads-18097010357129535-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-16",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/Dejlr72ko40",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-18389582314167602",
+    "category": "萬物冷知識",
+    "title": "土星主環的垂直厚度",
+    "summary": "土星擁有複雜且廣闊的行星環系統，其環系統從土星向外延伸可達約282,000公里，主要由數以億計的冰塊與岩石微粒所組成。",
+    "body": "土星擁有複雜且廣闊的行星環系統，其環系統從土星向外延伸可達約282,000公里，主要由數以億計的冰塊與岩石微粒所組成。\n\n儘管土星環在橫向上的覆蓋範圍十分巨大，但主環的垂直高度通常只有約10公尺（30英呎）。環中的微粒尺寸差異懸殊，從小如塵埃的冰粒到大如房屋的塊狀物皆有。",
+    "paragraphs": [
+      "土星擁有複雜且廣闊的行星環系統，其環系統從土星向外延伸可達約282,000公里，主要由數以億計的冰塊與岩石微粒所組成。",
+      "儘管土星環在橫向上的覆蓋範圍十分巨大，但主環的垂直高度通常只有約10公尺（30英呎）。環中的微粒尺寸差異懸殊，從小如塵埃的冰粒到大如房屋的塊狀物皆有。"
+    ],
+    "species": "Threads 冷知識",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18389582314167602-source-1",
+    "sourceIds": [
+      "threads-18389582314167602-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-15",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/Dege3U3gYrm",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-18095304383663978",
+    "category": "萬物冷知識",
+    "title": "珊瑚白化不等於死亡",
+    "summary": "當珊瑚受到溫度、光線或營養物質等條件變化的壓力時，會排出生活在其組織內的共生藻類，導致整體完全變白，這種現象稱為白化。",
+    "body": "當珊瑚受到溫度、光線或營養物質等條件變化的壓力時，會排出生活在其組織內的共生藻類，導致整體完全變白，這種現象稱為白化。\n\n當珊瑚發生白化時，它其實並沒有死亡。珊瑚可以在白化事件中存活下來，但此時會承受更高的壓力，並且更容易死亡。",
+    "paragraphs": [
+      "當珊瑚受到溫度、光線或營養物質等條件變化的壓力時，會排出生活在其組織內的共生藻類，導致整體完全變白，這種現象稱為白化。",
+      "當珊瑚發生白化時，它其實並沒有死亡。珊瑚可以在白化事件中存活下來，但此時會承受更高的壓力，並且更容易死亡。"
+    ],
+    "species": "Threads 冷知識",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18095304383663978-source-1",
+    "sourceIds": [
+      "threads-18095304383663978-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-14",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/Ded6FMLE9Es",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-18194457262396370",
+    "category": "萬物冷知識",
+    "title": "土星的平均密度小於水",
+    "summary": "土星主要由氫和氦組成。在土星的中心，有一個由鐵與鎳等金屬構成的稠密核心，周圍環繞著岩石物質與其他化合物，外面則包覆著液態…",
+    "body": "土星主要由氫和氦組成。在土星的中心，有一個由鐵與鎳等金屬構成的稠密核心，周圍環繞著岩石物質與其他化合物，外面則包覆著液態金屬氫層與液態氫層。\n\n土星是太陽系中唯一平均密度小於水的行星。如果存在一個足夠巨大的浴缸，這顆巨大的氣體行星可以浮在水面上。",
+    "paragraphs": [
+      "土星主要由氫和氦組成。在土星的中心，有一個由鐵與鎳等金屬構成的稠密核心，周圍環繞著岩石物質與其他化合物，外面則包覆著液態金屬氫層與液態氫層。",
+      "土星是太陽系中唯一平均密度小於水的行星。如果存在一個足夠巨大的浴缸，這顆巨大的氣體行星可以浮在水面上。"
+    ],
+    "species": "Threads 冷知識",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18194457262396370-source-1",
+    "sourceIds": [
+      "threads-18194457262396370-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-13",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DebVS5llMXC",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-18142281385613019",
+    "category": "萬物冷知識",
+    "title": "木星的液態氫海洋",
+    "summary": "在木星大氣層深處，隨著壓力與溫度增加，氣態氫會被壓縮成液體。這使木星擁有太陽系中規模最大的海洋。",
+    "body": "在木星大氣層深處，隨著壓力與溫度增加，氣態氫會被壓縮成液體。這使木星擁有太陽系中規模最大的海洋。\n\n這座海洋並非由水組成，而是完全由液態氫所構成。\n\n在更深的區域，科學家認為極端的壓力會將氫原子的電子剝離，讓這種液體像金屬一樣具有導電性。",
+    "paragraphs": [
+      "在木星大氣層深處，隨著壓力與溫度增加，氣態氫會被壓縮成液體。這使木星擁有太陽系中規模最大的海洋。",
+      "這座海洋並非由水組成，而是完全由液態氫所構成。",
+      "在更深的區域，科學家認為極端的壓力會將氫原子的電子剝離，讓這種液體像金屬一樣具有導電性。"
+    ],
+    "species": "Threads 冷知識",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18142281385613019-source-1",
+    "sourceIds": [
+      "threads-18142281385613019-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-12",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DeYwbaekeWb",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-18126728521868971",
+    "category": "萬物冷知識",
+    "title": "海洋顏色與光線深度",
+    "summary": "海洋呈現藍色是因為水吸收了光譜中的紅光部分。水如同濾鏡一般，留下藍光供眼睛接收。當光線從水中漂浮的沉積物與顆粒反射時，海…",
+    "body": "海洋呈現藍色是因為水吸收了光譜中的紅光部分。水如同濾鏡一般，留下藍光供眼睛接收。當光線從水中漂浮的沉積物與顆粒反射時，海水也可能呈現綠色或紅色等色彩。\n\n然而，大部分的海洋完全是黑暗的。幾乎沒有光線能穿透超過656英呎的深度，當深度超過3,280英呎時，更是沒有任何光線能夠透入。",
+    "paragraphs": [
+      "海洋呈現藍色是因為水吸收了光譜中的紅光部分。水如同濾鏡一般，留下藍光供眼睛接收。當光線從水中漂浮的沉積物與顆粒反射時，海水也可能呈現綠色或紅色等色彩。",
+      "然而，大部分的海洋完全是黑暗的。幾乎沒有光線能穿透超過656英呎的深度，當深度超過3,280英呎時，更是沒有任何光線能夠透入。"
+    ],
+    "species": "Threads 冷知識",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18126728521868971-source-1",
+    "sourceIds": [
+      "threads-18126728521868971-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-11",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DeWLusNkzvS",
+    "archive": true,
+    "eventDate": ""
+  },
+  {
+    "id": "threads-17913668427280744",
+    "category": "萬物冷知識",
+    "title": "雨後泥土香與土臭素",
+    "summary": "下雨時聞到的泥土香，有一部分其實來自土壤裡的細菌。🌧️",
+    "body": "下雨時聞到的泥土香，有一部分其實來自土壤裡的細菌。🌧️\n\n這些細菌會產生一種叫「土臭素」的物質，是雨後泥土氣味的重要來源之一。\n\n名字聽起來不太討喜，卻是許多人喜歡「下雨的味道」的原因。",
+    "paragraphs": [
+      "下雨時聞到的泥土香，有一部分其實來自土壤裡的細菌。🌧️",
+      "這些細菌會產生一種叫「土臭素」的物質，是雨後泥土氣味的重要來源之一。",
+      "名字聽起來不太討喜，卻是許多人喜歡「下雨的味道」的原因。"
+    ],
+    "species": "Threads 冷知識",
+    "scopeLabel": "原文範圍",
+    "source": "threads-17913668427280744-source-1",
+    "sourceIds": [
+      "threads-17913668427280744-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-10",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DeUKDCZE0nN",
+    "archive": true,
+    "eventDate": ""
+  }
+];
