@@ -39,10 +39,23 @@
   $('#detail').classList.toggle('story-detail',f.category==='河狸事件簿');
   if(!$('#detail').open)$('#detail').showModal();track('fact_open',{fact_id:id,category:f.category,content_type:contentType(id)});
  }
+ 
+ function refreshTicker(){
+  const pool=facts.filter(f=>f.category!=='河狸事件簿');
+  for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}
+  const chosen=pool.slice(0,6);
+  const group=duplicate=>`<div class="ticker-group"${duplicate?' aria-hidden="true"':''}>${chosen.map(f=>`<button class="ticker-fact plain" data-open="${esc(f.id)}" data-ticker="true"${duplicate?' tabindex="-1"':''}><span aria-hidden="true">✳</span> ${esc(f.summary)} <span class="ticker-read" aria-hidden="true">↗</span></button>`).join('')}</div>`;
+  $('#factTicker').innerHTML=group(false)+group(true);
+  const characters=chosen.reduce((total,f)=>total+f.summary.length,0);
+  $('#factTicker').style.animationDuration=`${Math.max(55,characters*.65)}s`;
+ }
+ $('#refreshTicker').onclick=()=>{refreshTicker();track('ticker_refresh');};
+ refreshTicker();
+
  document.addEventListener('click',async e=>{const t=e.target.closest('button');if(!t)return;
   if(t.dataset.species){speciesFilter=t.dataset.species;track('species_filter',{species:speciesFilter});render();}
   if(t.dataset.category){category=t.dataset.category;savedOnly=false;track('category_select',{category});render();}
-  if(t.dataset.open)openFact(t.dataset.open);
+  if(t.dataset.open){openFact(t.dataset.open);if(t.dataset.ticker)track('ticker_fact_open',{fact_id:t.dataset.open});}
   if(t.dataset.save)toggleSave(t.dataset.save);
   if(t.dataset.share){const url=location.origin+location.pathname+'#fact='+t.dataset.share;try{await navigator.clipboard.writeText(url);clearTimeout(copyTimers.get(t));t.textContent='✓ 已複製連結';t.classList.remove('copy-success');void t.offsetWidth;t.classList.add('copy-success');t.setAttribute('aria-label','分享連結已複製');toast('分享連結已複製');track('share',{method:'copy',content_id:t.dataset.share,content_type:contentType(t.dataset.share)});}catch{toast('無法自動複製，請使用瀏覽器分享功能。');}}
   if(t.classList.contains('close'))t.closest('dialog').close();
