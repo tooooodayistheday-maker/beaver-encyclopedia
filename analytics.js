@@ -13,7 +13,7 @@
       const script = document.createElement('script'); script.async = true; script.src = 'https://www.googletagmanager.com/gtag/js?id='+id; document.head.append(script);
     },
     event(name, params={}) { if(started && read()) window.gtag('event',name,params); },
-    consent(allow) {try{localStorage.setItem('beaver-analytics',allow?'yes':'no');}catch{} if(allow)this.start(); else if(window.BEAVER_CONFIG?.gaId) window['ga-disable-'+window.BEAVER_CONFIG.gaId]=true;},
+    consent(allow) {try{localStorage.setItem('beaver-analytics',allow?'yes':'no');}catch{} const id=window.BEAVER_CONFIG?.gaId;if(id)window['ga-disable-'+id]=!allow;if(allow)this.start();},
     allowed:read
   };
   window.beaverAnalytics.start();
