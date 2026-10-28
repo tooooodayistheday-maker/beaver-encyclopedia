@@ -52,3 +52,16 @@ dialog[open] #detailContent>h2{animation:arrive .45s .05s var(--arrival) both}di
 
 @media(max-width:420px){.nav .brand{font-size:15px}.nav nav{gap:0}.nav nav>a{display:flex!important}}
 @media(max-width:360px){.nav .brand{font-size:13px}}
+
+/* Each time of day has its own pose, not a recolour of a log-holding beaver. */
+.hero-art .beaver-character{animation:none!important;transform:none!important}.day-pose{display:none}.hero-art[data-day-phase="day"] .pose-rest,.hero-art[data-day-phase="dusk"] .pose-gnaw,.hero-art[data-day-phase="night"] .pose-swim,.hero-art[data-day-phase="dawn"] .pose-groom{display:block}.swim-water{display:none}.resting-beaver{animation:sleep-breath 4s ease-in-out infinite}.sleep-marks{animation:sleep-mark-drift 4s ease-in-out infinite}.pose-gnaw .action-branch,.pose-gnaw .action-paws{animation:gnaw-lift 1s ease-in-out infinite}.pose-gnaw .action-head{animation:tiny-nibble 1s ease-in-out infinite}.gnaw-chips{animation:chips-fall 1s ease-out infinite}.grooming-paw{transform-origin:80% 95%;animation:groom-cheek 1.8s ease-in-out infinite}.pose-groom .action-head{animation:groom-head 1.8s ease-in-out infinite}
+@keyframes sleep-breath{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.025)}}
+@keyframes sleep-mark-drift{0%{opacity:0;transform:translateY(0)}40%{opacity:.8}100%{opacity:0;transform:translateY(-12px)}}
+@keyframes gnaw-lift{0%,100%{transform:translateY(-7px) rotate(-2deg)}50%{transform:translateY(-13px) rotate(2deg)}}
+@keyframes chips-fall{0%{opacity:0;transform:translateY(0)}30%{opacity:1}100%{opacity:0;transform:translateY(21px)}}
+@keyframes groom-cheek{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(10deg) translateY(-3px)}}
+@keyframes groom-head{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+.motion-paused .day-pose *,.tab-hidden .day-pose *{animation-play-state:paused!important}
+
+.action-tail{transform-box:fill-box;transform-origin:center}.splashing .action-tail{animation:action-tail-slap 1.2s ease-out!important}
+@keyframes action-tail-slap{0%,100%{transform:rotate(0)}30%{transform:rotate(-22deg)}50%{transform:rotate(12deg)}75%{transform:rotate(-5deg)}}
