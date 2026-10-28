@@ -122,6 +122,13 @@
  document.querySelector('#species').before(foldTools);
  foldTools.addEventListener('click',e=>{const button=e.target.closest('[data-fold-all]');if(!button)return;document.querySelectorAll('details.content-fold').forEach(fold=>fold.open=button.dataset.foldAll==='open');});
 
+ 
+ const menuToggle=$('#mobileMenuToggle'),mainNav=$('#mainNavigation');
+ function closeMobileMenu(){document.querySelector('.nav').classList.remove('mobile-menu-open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰ 選單';}
+ menuToggle.addEventListener('click',()=>{const open=menuToggle.getAttribute('aria-expanded')!=='true';document.querySelector('.nav').classList.toggle('mobile-menu-open',open);menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'× 收起':'☰ 選單';});
+ mainNav.addEventListener('click',e=>{if(e.target.closest('a,button'))closeMobileMenu();});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menuToggle.getAttribute('aria-expanded')==='true'){closeMobileMenu();menuToggle.focus();}});
+
  $('#totalFacts').textContent=facts.length;render();renderQuiz();
  if(location.hash.startsWith('#fact='))openFact(decodeURIComponent(location.hash.slice(6)));
 })();

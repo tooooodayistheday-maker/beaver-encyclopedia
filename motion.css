@@ -49,3 +49,6 @@ dialog[open] #detailContent>h2{animation:arrive .45s .05s var(--arrival) both}di
 .swim-water{opacity:0;transition:opacity 1.5s}.hero-art[data-day-phase="night"] .swim-water{opacity:.95}.hero-art[data-day-phase="night"] .sun-halo{animation:none;opacity:0}
 @keyframes night-swim{0%,100%{transform:translate(-12px,24px) rotate(-2deg)}50%{transform:translate(12px,29px) rotate(2deg)}}
 @media(hover:hover) and (pointer:fine){.fold-summary{cursor:url("assets/tail-cursor-active.svg") 5 4,pointer}}
+
+@media(max-width:420px){.nav .brand{font-size:15px}.nav nav{gap:0}.nav nav>a{display:flex!important}}
+@media(max-width:360px){.nav .brand{font-size:13px}}
