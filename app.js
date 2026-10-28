@@ -87,6 +87,16 @@
   track('species_compare',{mode});
  }));
 
+ 
+ const seasonNotes={"spring": {"name": "春天", "tag": "新生命，住進小窩", "title": "春末到初夏，窩裡多了小小河狸", "body": "在北半球許多溫帶棲地，河狸幼獸會在春末至初夏出生，由家庭成員照顧。確切時點會隨緯度、氣候與族群改變。", "food": "植物恢復生長，嫩葉、草本及水生植物逐漸成為可用食物。", "home": "育幼期間的小窩與岸邊洞穴，是家庭休息及照顧幼獸的重要空間。", "observe": "可以留意岸邊新鮮的啃痕與活動跡象；保持距離，別靠近窩口。", "source": "https://www.nature.scot/doc/beavers-scotland-faq", "sourceLabel": "NatureScot · 蘇格蘭河狸常見問題"}, "summer": {"name": "夏天", "tag": "湖邊的植物自助餐", "title": "夏日菜單，多了新鮮的綠色選擇", "body": "北美河狸在春夏會利用較多草本與水生植物；歐亞河狸也會利用這些季節性食物。牠們以植物為食，住在湖裡不代表吃魚。", "food": "葉片、草本、水生植物及其根莖等；實際菜單取決於當地植物。", "home": "成獸覓食、照顧幼獸，幼獸也逐漸接觸窩外環境；不是所有家庭都照同一張行事曆活動。", "observe": "從遠處留意水面的游動路線。別餵食，也別為了拍照擋住牠們回水裡的路。", "source": "https://research.fs.usda.gov/feis/species-reviews/caca", "sourceLabel": "美國林務局 · 北美河狸物種綜述"}, "autumn": {"name": "秋天", "tag": "把冬季糧倉準備好", "title": "寒冬將近，枝條先存進水裡", "body": "在冬季可能結冰的棲地，河狸常在結冰前儲備可食用的枝條，讓冬季也有機會取得食物。並不是每個族群都需要同樣的儲糧方式。", "food": "木本植物的重要性提高；寒冷地區可能在窩附近的水下建立枝條食物庫。", "home": "築壩與修繕是因應棲地需要的工作，不是只限秋天才進行的固定儀式。", "observe": "水裡堆著的枝條可能是糧食，也可能是建材；不要移動或拆除。", "source": "https://fwp.mt.gov/conservation/living-with-wildlife/beavers", "sourceLabel": "蒙大拿州魚類、野生動物與公園局 · 與河狸共處"}, "winter": {"name": "冬天", "tag": "不冬眠，繼續過日子", "title": "湖面結冰，也不是一覺睡到春天", "body": "河狸不冬眠。在寒冷、池塘結冰的地區，牠們可能減少外出，利用窩、冰下水道與儲存的枝條生活；牠們仍需要活動與進食。", "food": "可利用水下儲存的枝條或其他可取得的植物；冰封情況會影響覓食方式。", "home": "窩內休息空間位於水面之上；入口可通向水下，不是整個冬天都泡在水裡。", "observe": "看不到河狸，不代表窩裡沒住戶。別踩上窩或薄冰，從安全岸邊遠距離觀察即可。", "source": "https://www.nps.gov/bela/learn/nature/beaver.htm", "sourceLabel": "美國國家公園署 · 白令陸橋國家保護區河狸介紹"}};
+ function showSeason(key){const note=seasonNotes[key];if(!note)return;
+  document.querySelector('.season-layout').dataset.currentSeason=key;
+  document.querySelectorAll('[data-season]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.season===key)));
+  $('#seasonStory').innerHTML=`<p class="eyebrow">${note.name} · ${note.tag}</p><h3>${note.title}</h3><p>${note.body}</p><dl><dt>這季吃什麼</dt><dd>${note.food}</dd><dt>窩裡忙什麼</dt><dd>${note.home}</dd><dt>湖邊觀察提醒</dt><dd>${note.observe}</dd></dl><a class="species-source" href="${note.source}" target="_blank" rel="noopener">參考來源：${note.sourceLabel} ↗</a>`;
+ }
+ document.querySelectorAll('[data-season]').forEach(button=>button.addEventListener('click',()=>{showSeason(button.dataset.season);track('season_select',{season:button.dataset.season});}));
+ showSeason('spring');
+
  $('#totalFacts').textContent=facts.length;render();renderQuiz();
  if(location.hash.startsWith('#fact='))openFact(decodeURIComponent(location.hash.slice(6)));
 })();
