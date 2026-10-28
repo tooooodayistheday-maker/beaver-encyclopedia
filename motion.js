@@ -13,6 +13,12 @@
  observe();new MutationObserver(observe).observe(document.querySelector('#cards'),{childList:true});
  new MutationObserver(observe).observe(document.querySelector('#storyCards'),{childList:true});
  const scene=document.querySelector('.hero-art'),fine=matchMedia('(hover:hover) and (pointer:fine)');
+ 
+ const phases=[['day','白天 · 窩邊休息'],['dusk','黃昏 · 啃啃枝條'],['night','夜晚 · 游水搬枝'],['dawn','晨光 · 整理毛皮']];let phaseIndex=0,phaseTime=0,lastFrame=0;
+ function paintPhase(){scene.dataset.dayPhase=phases[phaseIndex][0];document.querySelector('#dayPhaseLabel').textContent=phases[phaseIndex][1];}
+ paintPhase();document.querySelector('#changeDayPhase').addEventListener('click',()=>{phaseIndex=(phaseIndex+1)%phases.length;phaseTime=0;paintPhase();window.beaverAnalytics?.event('day_phase_select',{phase:phases[phaseIndex][0]});});
+ function dayFrame(now){if(lastFrame&&enabled&&!reduced.matches&&!document.hidden){phaseTime+=Math.min(now-lastFrame,100);if(phaseTime>=9000){phaseTime=0;phaseIndex=(phaseIndex+1)%phases.length;paintPhase();}}lastFrame=now;requestAnimationFrame(dayFrame);}requestAnimationFrame(dayFrame);
+
  scene.addEventListener('pointermove',e=>{if(!enabled||!fine.matches)return;const r=scene.getBoundingClientRect();scene.style.setProperty('--scene-x',`${((e.clientX-r.left)/r.width-.5)*7}px`);scene.style.setProperty('--scene-y',`${((e.clientY-r.top)/r.height-.5)*5}px`);});
  scene.addEventListener('pointerleave',()=>{scene.style.setProperty('--scene-x','0px');scene.style.setProperty('--scene-y','0px');});
  document.addEventListener('visibilitychange',()=>root.classList.toggle('tab-hidden',document.hidden));

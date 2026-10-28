@@ -101,6 +101,27 @@
  updateSeason(0);
 
 
+ 
+ // Native details keep long sections compact and remain keyboard accessible.
+ const foldSpecs=[['species','認識河狸','物種介紹與超級比一比'],['compare','河狸物種超級比一比','9 個比較項目'],['seasons','河狸的四季','春夏秋冬，左右滑動'],['explore','河狸冷知識','短篇筆記與物種篩選'],['stories','河狸事件簿','長篇故事，慢慢讀'],['quiz','河狸小測驗','5 題挑戰'],['about','資料與來源','認識我們的參考資料']];
+ foldSpecs.forEach(([id,label,description])=>{
+  const section=document.getElementById(id);if(!section)return;
+  const fold=document.createElement('details');fold.className='content-fold'+(id==='compare'?' nested-fold':'');fold.id=id;section.removeAttribute('id');
+  const summary=document.createElement('summary');summary.className='fold-summary'+(id==='compare'?'':' wrap');
+  const heading=section.querySelector('h2,h3');const title=heading||document.createElement('h2');title.textContent=label;
+  const info=document.createElement('div');info.className='fold-info';info.append(title);const hint=document.createElement('span');hint.textContent=description;info.append(hint);
+  const indicator=document.createElement('span');indicator.className='fold-indicator';indicator.setAttribute('aria-hidden','true');summary.append(info,indicator);
+  section.before(fold);fold.append(summary,section);section.classList.add('fold-body');
+  fold.addEventListener('toggle',()=>track('section_fold',{section:id,expanded:fold.open}));
+ });
+ function openSection(target){if(!target)return;if(target.matches('details'))target.open=true;let parent=target.parentElement;while(parent){if(parent.matches('details'))parent.open=true;parent=parent.parentElement;}}
+ function openHashSection(){const id=decodeURIComponent(location.hash.slice(1));if(!id||id.startsWith('fact='))return;const target=document.getElementById(id);openSection(target);if(target)requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));}
+ document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(a){const target=document.getElementById(a.getAttribute('href').slice(1));openSection(target);}if(e.target.closest('#savedNav'))openSection(document.getElementById('explore'));},{capture:true});
+ addEventListener('hashchange',openHashSection);openHashSection();
+ const foldTools=document.createElement('div');foldTools.className='fold-tools wrap';foldTools.innerHTML='<span>想看哪一區，再打開就好。</span><div><button type="button" data-fold-all="open">全部展開</button><button type="button" data-fold-all="close">全部收合</button></div>';
+ document.querySelector('#species').before(foldTools);
+ foldTools.addEventListener('click',e=>{const button=e.target.closest('[data-fold-all]');if(!button)return;document.querySelectorAll('details.content-fold').forEach(fold=>fold.open=button.dataset.foldAll==='open');});
+
  $('#totalFacts').textContent=facts.length;render();renderQuiz();
  if(location.hash.startsWith('#fact='))openFact(decodeURIComponent(location.hash.slice(6)));
 })();
