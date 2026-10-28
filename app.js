@@ -44,7 +44,7 @@
   if(t.dataset.category){category=t.dataset.category;savedOnly=false;track('category_select',{category});render();}
   if(t.dataset.open)openFact(t.dataset.open);
   if(t.dataset.save)toggleSave(t.dataset.save);
-  if(t.dataset.share){const url=location.origin+location.pathname+'#fact='+t.dataset.share;try{await navigator.clipboard.writeText(url);clearTimeout(copyTimers.get(t));t.textContent='✓ 已複製連結';t.classList.remove('copy-success');void t.offsetWidth;t.classList.add('copy-success');t.setAttribute('aria-label','分享連結已複製');copyTimers.set(t,setTimeout(()=>{t.textContent='複製分享連結 ↗';t.classList.remove('copy-success');t.removeAttribute('aria-label');},3000));toast('分享連結已複製');track('share',{method:'copy',content_id:t.dataset.share,content_type:contentType(t.dataset.share)});}catch{toast('無法自動複製，請使用瀏覽器分享功能。');}}
+  if(t.dataset.share){const url=location.origin+location.pathname+'#fact='+t.dataset.share;try{await navigator.clipboard.writeText(url);clearTimeout(copyTimers.get(t));t.textContent='✓ 已複製連結';t.classList.remove('copy-success');void t.offsetWidth;t.classList.add('copy-success');t.setAttribute('aria-label','分享連結已複製');toast('分享連結已複製');track('share',{method:'copy',content_id:t.dataset.share,content_type:contentType(t.dataset.share)});}catch{toast('無法自動複製，請使用瀏覽器分享功能。');}}
   if(t.classList.contains('close'))t.closest('dialog').close();
  });
  let searchTimer;$('#search').addEventListener('input',()=>{render();clearTimeout(searchTimer);if($('#search').value.trim())searchTimer=setTimeout(()=>{track('knowledge_search',{result_count:$('#cards').children.length+$('#storyCards').children.length});},700);});$('#clear').onclick=reset;$('#reset').onclick=reset;
