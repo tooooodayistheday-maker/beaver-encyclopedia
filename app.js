@@ -20,14 +20,19 @@
  function reset(){category='全部知識';savedOnly=false;$('#search').value='';render();}
  function render(){
   const q=$('#search').value.trim().toLocaleLowerCase();
-  const filtered=facts.filter(f=>(category==='全部知識'||f.category===category)&&(!savedOnly||saved.has(f.id))&&(!q||[f.title,f.summary,f.body,f.species].join(' ').toLocaleLowerCase().includes(q)));
-  $('.filters').innerHTML=['全部知識','Threads 河狸短篇','河狸事件簿','萬物冷知識','身體祕密','生活日常','築壩工程','生態影響'].map(c=>`<button class="${category===c?'active':''}" aria-pressed="${category===c}" data-category="${c}">${c}</button>`).join('');
+  const matches=f=>(!savedOnly||saved.has(f.id))&&(!q||[f.title,f.summary,f.body,f.species].join(' ').toLocaleLowerCase().includes(q));
+  const filtered=facts.filter(f=>f.category!=='河狸事件簿'&&(category==='全部知識'||f.category===category)&&matches(f));
+  const stories=facts.filter(f=>f.category==='河狸事件簿'&&matches(f));
+  $('.filters').innerHTML=['全部知識','Threads 河狸短篇','身體祕密','生活日常','築壩工程','生態影響'].map(c=>`<button class="${category===c?'active':''}" aria-pressed="${category===c}" data-category="${c}">${c}</button>`).join('');
   $('#cards').innerHTML=filtered.map(f=>`<article class="card"><div class="card-visual"><span class="card-no">NOTE ${String(facts.indexOf(f)+1).padStart(3,'0')}</span>${icon(f)}<button class="save" data-save="${f.id}" aria-label="${saved.has(f.id)?'取消收藏':'收藏'}：${esc(f.title)}" aria-pressed="${saved.has(f.id)}">${saved.has(f.id)?'♥':'♡'}</button></div><div class="card-body"><span class="card-category">${f.category}${f.publishedDate?` · ${f.publishedDate}`:''}</span><h3>${esc(f.title)}</h3><p>${esc(f.summary)}</p><div class="card-bottom"><span>${f.species}</span><button class="plain" data-open="${f.id}">閱讀筆記 ↗</button></div></div></article>`).join('');
+  $('#storyCards').innerHTML=stories.map((f,i)=>`<article class="card story-card"><div class="story-art"><span class="story-number">CHRONICLE / ${String(i+1).padStart(2,'0')}</span>${icon(f)}<button class="save" data-save="${f.id}" aria-label="${saved.has(f.id)?'取消收藏':'收藏'}：${esc(f.title)}" aria-pressed="${saved.has(f.id)}">${saved.has(f.id)?'♥':'♡'}</button><span class="story-type">河狸事件簿</span></div><div class="story-body"><div class="story-meta">${f.publishedDate} · 約 ${Math.max(1,Math.ceil(f.body.length/400))} 分鐘閱讀</div><h3>${esc(f.title)}</h3><p>${esc(f.summary)}</p><div class="story-location">${esc(f.species)}</div><button class="plain story-read" data-open="${f.id}">讀完整個故事 <span>↗</span></button></div></article>`).join('');
+  $('#storyCount').textContent=`${stories.length} 篇長篇故事`;$('#storiesEmpty').hidden=stories.length>0;
   $('#results').textContent=`${savedOnly?'我的收藏 · ':''}共 ${filtered.length} 則知識筆記`;
   $('#savedCount').textContent=saved.size;$('#savedNav').setAttribute('aria-pressed',savedOnly);$('#clear').hidden=category==='全部知識'&&!savedOnly&&!q;$('#empty').hidden=filtered.length>0;
  }
  function openFact(id){const f=facts.find(x=>x.id===id);if(!f)return;
   $('#detailContent').innerHTML=`<p class="eyebrow">FIELD NOTE ${String(facts.indexOf(f)+1).padStart(3,'0')} / ${f.category}</p><h2>${esc(f.title)}</h2><span class="detail-species">${f.scopeLabel||'適用範圍'}：${esc(f.species)}${f.publishedDate?` · Threads 發布 ${f.publishedDate}`:''}</span>${f.eventDate?`<p class="detail-species">事件時間：${esc(f.eventDate)}</p>`:''}${f.archive?'':`<p><b>${esc(f.summary)}</b></p>`}${(f.paragraphs||[f.body]).map(p=>`<p>${esc(p).replace(/\n/g,'<br>')}</p>`).join('')}${(f.sourceIds||[f.source]).map(id=>`<a class="source-link" href="${esc(sources[id].url)}" target="_blank" rel="noopener">參考來源：${esc(sources[id].name)} ↗</a>`).join('')}${f.threadsUrl?`<a class="source-link" href="${esc(f.threadsUrl)}" target="_blank" rel="noopener">閱讀 Threads 原文 ↗</a>`:''}<div class="hero-actions"><button class="button" data-save="${f.id}" aria-pressed="${saved.has(f.id)}">${saved.has(f.id)?'已收藏 ♥':'收藏這則知識 ♡'}</button><button class="plain" data-share="${f.id}">複製分享連結 ↗</button></div>`;
+  $('#detail').classList.toggle('story-detail',f.category==='河狸事件簿');
   if(!$('#detail').open)$('#detail').showModal();track('fact_open',{fact_id:id,category:f.category});
  }
  document.addEventListener('click',async e=>{const t=e.target.closest('button');if(!t)return;
