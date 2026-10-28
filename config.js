@@ -1,1 +1,1 @@
-window.BEAVER_CONFIG = {gaId: ''};
+window.BEAVER_CONFIG = {gaId: 'G-3NP76T1YXT'};
