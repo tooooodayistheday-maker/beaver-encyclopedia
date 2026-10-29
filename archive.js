@@ -32,6 +32,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "史密森尼國家動物園",
     "url": "https://nationalzoo.si.edu/animals/beaver"
   },
+  "threads-18119208398074261-source-1": {
+    "name": "美國國家公園管理局・阿卡迪亞",
+    "url": "https://www.nps.gov/articles/north-american-beaver-acadia.htm"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -78,6 +82,29 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18119208398074261",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸的三層眼瞼與視力",
+    "summary": "北美河狸的眼睛具有三層眼瞼的構造。",
+    "body": "北美河狸的眼睛具有三層眼瞼的構造。\n\n當北美河狸穿梭於樹枝與細枝之間時，這項眼部構造能幫助保護眼睛免受樹枝與細枝傷害。\n\n雖然北美河狸在陸地上的視力較差，但牠們在水下活動時能夠保持清晰的視覺。",
+    "paragraphs": [
+      "北美河狸的眼睛具有三層眼瞼的構造。",
+      "當北美河狸穿梭於樹枝與細枝之間時，這項眼部構造能幫助保護眼睛免受樹枝與細枝傷害。",
+      "雖然北美河狸在陸地上的視力較差，但牠們在水下活動時能夠保持清晰的視覺。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18119208398074261-source-1",
+    "sourceIds": [
+      "threads-18119208398074261-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-29",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DfEh90sIMgO",
+    "archive": true,
+    "eventDate": ""
+  },
   {
     "id": "threads-18089489276282474",
     "category": "Threads 河狸短篇",
