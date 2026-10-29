@@ -46,8 +46,8 @@ body{background-color:#f3f1e5;background-image:radial-gradient(ellipse at 94% 4%
 
 /* Native cursor assets keep the exact pointer position without tracking scripts. */
 @media (hover:hover) and (pointer:fine){
- html,body,body *{cursor:url("assets/tail-cursor.svg") 5 4,auto}
- a,a *,button,button *,[role="button"],[role="button"] *,summary,label[for]{cursor:url("assets/tail-cursor-active.svg") 5 4,pointer}
+ html,body,body *{cursor:url("assets/log-cursor.svg") 7 6,auto}
+ a,a *,button,button *,[role="button"],[role="button"] *,summary,label[for]{cursor:url("assets/log-cursor-active.svg") 7 6,pointer}
  input,textarea,[contenteditable="true"],[contenteditable="true"] *{cursor:text}
  button:disabled,input:disabled,[aria-disabled="true"]{cursor:not-allowed}
 }
