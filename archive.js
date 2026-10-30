@@ -36,6 +36,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "美國國家公園管理局・阿卡迪亞",
     "url": "https://www.nps.gov/articles/north-american-beaver-acadia.htm"
   },
+  "threads-18117770987108243-source-1": {
+    "name": "阿拉斯加魚類與野生動物部門",
+    "url": "https://www.adfg.alaska.gov/index.cfm?adfg=beaver.main"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -82,6 +86,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18117770987108243",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸的野外壽命與圈養長壽紀錄",
+    "summary": "北美河狸的壽命，可以超過十年。🦫",
+    "body": "北美河狸的壽命，可以超過十年。🦫\n\n阿拉斯加魚類與野生動物部門介紹，野外的北美河狸約能活10至12年；圈養環境中則曾有活到19年的紀錄。這是資料中的概略壽命與個別紀錄，不代表每隻河狸都能活到相同年齡，也不能直接套用到歐亞河狸。",
+    "paragraphs": [
+      "北美河狸的壽命，可以超過十年。🦫",
+      "阿拉斯加魚類與野生動物部門介紹，野外的北美河狸約能活10至12年；圈養環境中則曾有活到19年的紀錄。這是資料中的概略壽命與個別紀錄，不代表每隻河狸都能活到相同年齡，也不能直接套用到歐亞河狸。"
+    ],
+    "species": "歐亞河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18117770987108243-source-1",
+    "sourceIds": [
+      "threads-18117770987108243-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-30",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DfHGlwEoFhK",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "這則年齡筆記中，野外北美河狸的概略壽命是？",
+      "options": [
+        "10至12年",
+        "每隻都能活到19年",
+        "只有1年",
+        "固定100年"
+      ],
+      "answer": 0,
+      "explanation": "野外的北美河狸約能活10至12年"
+    }
+  },
   {
     "id": "threads-18119208398074261",
     "category": "Threads 河狸短篇",
