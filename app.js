@@ -71,7 +71,7 @@
   ['尾巴用力拍水通常表示？',['危險警報','準備冬眠','正在捕魚','發現新樹木'],0,'拍水聲會提醒同伴，附近可能有危險。','alarm'],
   ['壩與巢穴的功能有何不同？',['完全相同','壩蓄水，巢穴用來居住','壩用來存魚','巢穴讓水流加速'],1,'壩改變水位，巢穴則提供休息與繁殖的空間。','dams']
  ];
- const freshQuizzes=facts.filter(f=>f.archive&&f.quiz).map(f=>[f.quiz.question,f.quiz.options,f.quiz.answer,f.quiz.explanation,f.id]);
+ const freshQuizzes=facts.filter(f=>f.quiz).map(f=>[f.quiz.question,f.quiz.options,f.quiz.answer,f.quiz.explanation,f.id]);
  function quizRound(){const fresh=freshQuizzes.slice(0,3),pool=[...baseQuizzes];for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}return [...fresh,...pool].slice(0,5);}
  let quizzes=quizRound(),qi=0,score=0,answered=false;
  function renderQuiz(){answered=false;const c=$('#quizCard');if(qi>=quizzes.length){c.innerHTML=`<p class="eyebrow">CHALLENGE COMPLETE</p><h3>你答對了 ${score} / 5 題！</h3><p>${score===5?'你已經是河狸觀察家了！':'每一次好奇，都讓你更靠近河狸的世界。'}</p><button class="button" id="again">再挑戰一次 ↻</button>`;$('#again').onclick=()=>{quizzes=quizRound();qi=0;score=0;track('quiz_restart');renderQuiz();};track('quiz_complete',{score,total:5});return;}

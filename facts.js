@@ -25,3 +25,17 @@ window.BEAVER_FACTS = [
  ['fish','生態影響','水壩對魚的影響，不能一句話說完','答案取決於地點、魚種與時間。','NatureScot 指出，河狸壩對洄游魚類的影響具有地點差異，也會隨時間改變。不能一概說成「一定阻魚」或「完全沒有影響」。','歐亞河狸','nature','water'],
  ['rodent','身體祕密','牠是齧齒類，不是水獺','認識河狸，先從大門牙開始。','河狸屬於齧齒目，擁有兩對明顯的鑿形門牙。持續生長的門牙與扁平有鱗尾巴，是認識牠的線索。','北美河狸','nps','teeth']
 ].map(([id,category,title,summary,body,species,source,icon])=>({id,category,title,summary,body,species,source,icon}));
+
+window.BEAVER_SOURCES.alaska={name:'阿拉斯加魚類與野生動物部門 · 北美河狸',url:'https://www.adfg.alaska.gov/index.cfm?adfg=beaver.main'};
+window.BEAVER_FACTS.unshift({
+ id:'why-build-dams',category:'築壩工程',title:'河狸為什麼要築水壩？',
+ summary:'把水留住，讓住家附近更安全，也方便搬運枝條。',
+ body:'北美河狸在棲地水位不足時，會利用枝條、泥土等材料築壩，把水留住。較深的水域能提供躲避天敵的空間，也能讓枝條與木頭浮在水上，方便搬運食物和建材。',
+ paragraphs:[
+  '北美河狸在棲地水位不足時，會利用枝條、泥土等材料築壩，把水留住。築壩改變的是住家周圍的水位。',
+  '較深的水域能提供躲避天敵的空間，也能讓枝條與木頭浮在水上，方便搬運食物和建材。',
+  '住家的入口可通往深水，休息的房間則在水面以上。在會結冰的寒冷地區，冰下水道也有助於往返住家與儲糧處。',
+  '水壩與住家是不同構造。如果原本的水深與水位條件已經合適，河狸也可能直接利用岸邊洞穴，不一定需要築壩。'
+ ],species:'北美河狸',source:'alaska',icon:'dam',
+ quiz:{question:'水位不足時，河狸築壩主要能帶來什麼幫助？',options:['把水留住，提供較深的活動水域','把魚全部攔住當主食','讓整座住家泡在水裡','讓河流永遠停止流動'],answer:0,explanation:'築壩能蓄水；較深的水域可提供避敵空間，也方便搬運枝條。'}
+});
