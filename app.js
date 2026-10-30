@@ -43,7 +43,8 @@
  function refreshTicker(){
   const pool=facts.filter(f=>f.category!=='河狸事件簿');
   for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}
-  const chosen=pool.slice(0,6);
+  const newest=facts.filter(f=>f.archive&&f.category!=='河狸事件簿').slice(0,2);
+  const chosen=[...newest,...pool.filter(f=>!newest.some(n=>n.id===f.id))].slice(0,6);
   const group=duplicate=>`<div class="ticker-group"${duplicate?' aria-hidden="true"':''}>${chosen.map(f=>`<button class="ticker-fact plain" data-open="${esc(f.id)}" data-ticker="true"${duplicate?' tabindex="-1"':''}><span aria-hidden="true">✳</span> ${esc(f.title)}｜${esc(f.summary)} <span class="ticker-read" aria-hidden="true">↗</span></button>`).join('')}</div>`;
   $('#factTicker').innerHTML=group(false)+group(true);
   const characters=chosen.reduce((total,f)=>total+f.title.length+f.summary.length,0);
@@ -63,16 +64,19 @@
  let searchTimer;$('#search').addEventListener('input',()=>{render();clearTimeout(searchTimer);if($('#search').value.trim())searchTimer=setTimeout(()=>{track('knowledge_search',{result_count:$('#cards').children.length+$('#storyCards').children.length});},700);});$('#clear').onclick=reset;$('#reset').onclick=reset;
  $('#savedNav').onclick=()=>{savedOnly=!savedOnly;speciesFilter='全部河狸';category='全部知識';$('#search').value='';render();$('#explore').scrollIntoView();};
  $('#random').onclick=()=>{const pool=facts.filter(f=>f.category!=='河狸事件簿');const id=pool[Math.floor(Math.random()*pool.length)].id;openFact(id);track('random_fact',{fact_id:id,content_type:'short_fact'});};
- const quizzes=[
+ const baseQuizzes=[
   ['河狸的門牙為什麼是橘色？',['常喝紅茶','琺瑯質含有鐵','沾到樹皮','年紀太大'],1,'鐵讓琺瑯質呈深橘色，也能強化牙齒。','orange'],
   ['河狸主要吃什麼？',['魚和蝦','水生昆蟲','樹皮與植物','其他小動物'],2,'河狸是草食性動物，住水邊也不代表吃魚。','plants'],
   ['每個河狸棲地都有水壩嗎？',['一定都有','只有冬天有','水深足夠可能不築壩','只有北美河狸築壩'],2,'是否築壩，與河道寬度、水位和棲地條件有關。','notall'],
   ['尾巴用力拍水通常表示？',['危險警報','準備冬眠','正在捕魚','發現新樹木'],0,'拍水聲會提醒同伴，附近可能有危險。','alarm'],
   ['壩與巢穴的功能有何不同？',['完全相同','壩蓄水，巢穴用來居住','壩用來存魚','巢穴讓水流加速'],1,'壩改變水位，巢穴則提供休息與繁殖的空間。','dams']
- ];let qi=0,score=0,answered=false;
- function renderQuiz(){answered=false;const c=$('#quizCard');if(qi>=quizzes.length){c.innerHTML=`<p class="eyebrow">CHALLENGE COMPLETE</p><h3>你答對了 ${score} / 5 題！</h3><p>${score===5?'你已經是河狸觀察家了！':'每一次好奇，都讓你更靠近河狸的世界。'}</p><button class="button" id="again">再挑戰一次 ↻</button>`;$('#again').onclick=()=>{qi=0;score=0;track('quiz_restart');renderQuiz();};track('quiz_complete',{score,total:5});return;}
- const q=quizzes[qi];c.innerHTML=`<div class="progress"><span>QUESTION ${String(qi+1).padStart(2,'0')}</span><span>${qi+1} / 5</span></div><h3>${q[0]}</h3><div class="answers">${q[1].map((a,i)=>`<button data-answer="${i}">${String.fromCharCode(65+i)}. ${a}</button>`).join('')}</div><div class="quiz-feedback" aria-live="polite"></div>`;
- c.querySelectorAll('[data-answer]').forEach(b=>b.onclick=()=>{if(answered)return;if(qi===0)track('quiz_start');answered=true;const a=Number(b.dataset.answer),right=a===q[2];if(right)score++;c.querySelectorAll('[data-answer]').forEach(x=>{x.disabled=true;if(Number(x.dataset.answer)===q[2])x.classList.add('correct');});if(!right)b.classList.add('wrong');c.querySelector('.quiz-feedback').innerHTML=`<p>${right?'答對了！':'再認識一點：'}${q[3]}</p><button class="plain" data-open="${q[4]}">閱讀相關筆記 ↗</button> · <button class="plain" id="next">${qi===4?'查看結果':'下一題'} →</button>`;$('#next').onclick=()=>{qi++;renderQuiz();};track('quiz_answer',{question_id:q[4],correct:right});});
+ ];
+ const freshQuizzes=facts.filter(f=>f.archive&&f.quiz).map(f=>[f.quiz.question,f.quiz.options,f.quiz.answer,f.quiz.explanation,f.id]);
+ function quizRound(){const fresh=freshQuizzes.slice(0,3),pool=[...baseQuizzes];for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}return [...fresh,...pool].slice(0,5);}
+ let quizzes=quizRound(),qi=0,score=0,answered=false;
+ function renderQuiz(){answered=false;const c=$('#quizCard');if(qi>=quizzes.length){c.innerHTML=`<p class="eyebrow">CHALLENGE COMPLETE</p><h3>你答對了 ${score} / 5 題！</h3><p>${score===5?'你已經是河狸觀察家了！':'每一次好奇，都讓你更靠近河狸的世界。'}</p><button class="button" id="again">再挑戰一次 ↻</button>`;$('#again').onclick=()=>{quizzes=quizRound();qi=0;score=0;track('quiz_restart');renderQuiz();};track('quiz_complete',{score,total:5});return;}
+ const q=quizzes[qi];c.innerHTML=`<div class="progress"><span>QUESTION ${String(qi+1).padStart(2,'0')}</span><span>${qi+1} / 5</span></div><h3>${esc(q[0])}</h3><div class="answers">${q[1].map((a,i)=>`<button data-answer="${i}">${String.fromCharCode(65+i)}. ${esc(a)}</button>`).join('')}</div><div class="quiz-feedback" aria-live="polite"></div>`;
+ c.querySelectorAll('[data-answer]').forEach(b=>b.onclick=()=>{if(answered)return;if(qi===0)track('quiz_start');answered=true;const a=Number(b.dataset.answer),right=a===q[2];if(right)score++;c.querySelectorAll('[data-answer]').forEach(x=>{x.disabled=true;if(Number(x.dataset.answer)===q[2])x.classList.add('correct');});if(!right)b.classList.add('wrong');c.querySelector('.quiz-feedback').innerHTML=`<p>${right?'答對了！':'再認識一點：'}${esc(q[3])}</p><button class="plain" data-open="${q[4]}">閱讀相關筆記 ↗</button> · <button class="plain" id="next">${qi===4?'查看結果':'下一題'} →</button>`;$('#next').onclick=()=>{qi++;renderQuiz();};track('quiz_answer',{question_id:q[4],correct:right});});
  }
  $('#privacy').onclick=()=>{$('#analyticsStatus').textContent=window.BEAVER_CONFIG?.gaId?`目前設定：${window.beaverAnalytics.allowed()?'已允許分析':'尚未允許分析'}。`:'網站分析尚未啟用，等待管理者設定 GA4。';$('#privacyDialog').showModal();};
  $('#allow').onclick=()=>{window.beaverAnalytics.consent(true);$('#privacyDialog').close();toast('已儲存分析偏好');};$('#deny').onclick=()=>{window.beaverAnalytics.consent(false);$('#privacyDialog').close();toast('已停用網站分析');};
