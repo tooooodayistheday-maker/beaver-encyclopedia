@@ -40,6 +40,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "阿拉斯加魚類與野生動物部門",
     "url": "https://www.adfg.alaska.gov/index.cfm?adfg=beaver.main"
   },
+  "threads-18128070706918968-source-1": {
+    "name": "美國國家公園管理局・冰河國家公園",
+    "url": "https://www.nps.gov/glac/learn/education/beaver-natural-history-narrative.htm"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -86,6 +90,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18128070706918968",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸巢穴通道的建造方式",
+    "summary": "北美河狸在建造巢穴時，會先將樹枝與泥土堆疊成堆，直到高度超過水面。",
+    "body": "北美河狸在建造巢穴時，會先將樹枝與泥土堆疊成堆，直到高度超過水面。\n\n隨後，北美河狸會潛入池塘底部，從泥木堆下方向上啃咬穿透，開闢出一條高於水面的通道。牠們會在通道上方建造居住室，並在室內鋪上樹葉與草。",
+    "paragraphs": [
+      "北美河狸在建造巢穴時，會先將樹枝與泥土堆疊成堆，直到高度超過水面。",
+      "隨後，北美河狸會潛入池塘底部，從泥木堆下方向上啃咬穿透，開闢出一條高於水面的通道。牠們會在通道上方建造居住室，並在室內鋪上樹葉與草。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18128070706918968-source-1",
+    "sourceIds": [
+      "threads-18128070706918968-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-10-31",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DfJrk8Aid4B",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "北美河狸在堆疊完樹枝與泥土後，是如何開闢通往巢穴內部通道的？",
+      "options": [
+        "從陸地上方向下開挖通道",
+        "從泥木堆側邊直接挖洞進入",
+        "從泥木堆下方向上啃咬穿透",
+        "利用溪流沖刷出天然通道"
+      ],
+      "answer": 2,
+      "explanation": "隨後，北美河狸會潛入池塘底部，從泥木堆下方向上啃咬穿透，開闢出一條高於水面的通道。"
+    }
+  },
   {
     "id": "threads-18117770987108243",
     "category": "Threads 河狸短篇",
