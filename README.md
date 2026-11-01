@@ -22,3 +22,7 @@
 ## 資料與授權
 
 資料查核 2026-10-28。參考 Smithsonian’s National Zoo、U.S. National Park Service、NatureScot，各卡片連回原始頁面。插畫為本站原創示意。外部來源文字、機構名稱及 Google Fonts 分別遵循原權利人的授權。
+
+## 文章後續補充
+
+`editorial-updates.js` 在典藏載入後、app.js 前執行，為已發布文章追加有來源的網站補充，不改寫原 Threads 文字，亦不受 archive.js 每日重建影響。2026-11-01 補充空降河狸故事：1948 年76隻空投、75隻存活；2024年追蹤報導引述主管機關，現有資料無法提供原空投區近期數量估計或確認後代關係。
