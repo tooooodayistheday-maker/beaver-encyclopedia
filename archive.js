@@ -48,6 +48,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "俄勒岡動物園",
     "url": "https://www.oregonzoo.org/animals/american-beaver"
   },
+  "threads-17975428281170061-source-1": {
+    "name": "美國國家公園管理局・落磯山",
+    "url": "https://www.nps.gov/romo/learn/nature/beavers.htm"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -94,6 +98,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-17975428281170061",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸廢棄池塘的演替",
+    "summary": "當周圍缺乏足夠的建築材料時，北美河狸群落會遷移至其他地點，讓原本的棲地得以恢復。",
+    "body": "當周圍缺乏足夠的建築材料時，北美河狸群落會遷移至其他地點，讓原本的棲地得以恢復。\n\n長期來看，被北美河狸廢棄的池塘可能會演變成一片草地，甚至在未來某一天重新變成森林。",
+    "paragraphs": [
+      "當周圍缺乏足夠的建築材料時，北美河狸群落會遷移至其他地點，讓原本的棲地得以恢復。",
+      "長期來看，被北美河狸廢棄的池塘可能會演變成一片草地，甚至在未來某一天重新變成森林。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-17975428281170061-source-1",
+    "sourceIds": [
+      "threads-17975428281170061-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-02",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DfO1L_Kmv7k",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "根據本則內容，被北美河狸廢棄的池塘長期來看可能會發生什麼變化？",
+      "options": [
+        "可能會演變成一片草地",
+        "會永久保持深水湖泊狀態",
+        "會立刻變成乾涸的沙漠",
+        "會自動變成混凝土建築"
+      ],
+      "answer": 0,
+      "explanation": "長期來看，被北美河狸廢棄的池塘可能會演變成一片草地，甚至在未來某一天重新變成森林。"
+    }
+  },
   {
     "id": "threads-18092002673235777",
     "category": "Threads 河狸短篇",
