@@ -52,6 +52,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "美國國家公園管理局・落磯山",
     "url": "https://www.nps.gov/romo/learn/nature/beavers.htm"
   },
+  "threads-17949785385347031-source-1": {
+    "name": "密西根大學動物多樣性資料庫・北美河狸",
+    "url": "https://animaldiversity.org/accounts/Castor_canadensis/"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -98,6 +102,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-17949785385347031",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸盲腸微生物消化纖維素",
+    "summary": "纖維素是北美河狸飲食的主要成分，但哺乳動物通常無法消化這種物質。",
+    "body": "纖維素是北美河狸飲食的主要成分，但哺乳動物通常無法消化這種物質。\n\n北美河狸在大腸與小腸之間的盲腸中擁有微生物。這些微生物能夠幫助北美河狸消化纖維素。",
+    "paragraphs": [
+      "纖維素是北美河狸飲食的主要成分，但哺乳動物通常無法消化這種物質。",
+      "北美河狸在大腸與小腸之間的盲腸中擁有微生物。這些微生物能夠幫助北美河狸消化纖維素。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-17949785385347031-source-1",
+    "sourceIds": [
+      "threads-17949785385347031-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-03",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DfRZ-BDmpv6",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "北美河狸主要依靠位於何處的微生物來幫助消化纖維素？",
+      "options": [
+        "大腸與小腸之間的盲腸",
+        "胃部的消化腺",
+        "口腔中的唾液腺",
+        "小腸中的絨毛"
+      ],
+      "answer": 0,
+      "explanation": "北美河狸在大腸與小腸之間的盲腸中擁有微生物。"
+    }
+  },
   {
     "id": "threads-17975428281170061",
     "category": "Threads 河狸短篇",
