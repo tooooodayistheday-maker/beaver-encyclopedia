@@ -56,6 +56,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "密西根大學動物多樣性資料庫・北美河狸",
     "url": "https://animaldiversity.org/accounts/Castor_canadensis/"
   },
+  "threads-18099329366407258-source-1": {
+    "name": "密西根大學動物多樣性資料庫・歐亞河狸",
+    "url": "https://animaldiversity.org/accounts/Castor_fiber/"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -102,6 +106,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18099329366407258",
+    "category": "Threads 河狸短篇",
+    "title": "歐亞河狸堆築香丘標記領地的方式",
+    "summary": "歐亞河狸具有很強的領地性，會透過在岸邊建造香丘來標記自己的領地。",
+    "body": "歐亞河狸具有很強的領地性，會透過在岸邊建造香丘來標記自己的領地。\n\n在建造香丘時，歐亞河狸會從水底帶起泥土與植物，用前肢緊抱在胸前，並利用後腿推動自己爬上岸邊堆成土堆。隨後，牠們會將香囊分泌物塗抹在泥堆上完成標記。",
+    "paragraphs": [
+      "歐亞河狸具有很強的領地性，會透過在岸邊建造香丘來標記自己的領地。",
+      "在建造香丘時，歐亞河狸會從水底帶起泥土與植物，用前肢緊抱在胸前，並利用後腿推動自己爬上岸邊堆成土堆。隨後，牠們會將香囊分泌物塗抹在泥堆上完成標記。"
+    ],
+    "species": "歐亞河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18099329366407258-source-1",
+    "sourceIds": [
+      "threads-18099329366407258-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-04",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DfT-1o-CTTS",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "歐亞河狸在建造香丘時，如何將泥土與植物帶上岸？",
+      "options": [
+        "用前肢緊抱在胸前，並利用後腿推動自己爬上岸邊",
+        "用尾巴包裹泥土並拖行上岸",
+        "用嘴唇夾住泥土並潛水推上岸",
+        "用雙耳黏附泥土再爬行上岸"
+      ],
+      "answer": 0,
+      "explanation": "在建造香丘時，歐亞河狸會從水底帶起泥土與植物，用前肢緊抱在胸前，並利用後腿推動自己爬上岸邊堆成土堆。"
+    }
+  },
   {
     "id": "threads-17949785385347031",
     "category": "Threads 河狸短篇",
