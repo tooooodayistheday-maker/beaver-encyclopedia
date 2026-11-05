@@ -60,6 +60,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "密西根大學動物多樣性資料庫・歐亞河狸",
     "url": "https://animaldiversity.org/accounts/Castor_fiber/"
   },
+  "threads-18121351900755459-source-1": {
+    "name": "史密森尼國家動物園",
+    "url": "https://nationalzoo.si.edu/animals/beaver"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -106,6 +110,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18121351900755459",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸利用尾巴儲存脂肪",
+    "summary": "北美河狸具有在尾巴儲存脂肪的特性。",
+    "body": "北美河狸具有在尾巴儲存脂肪的特性。\n\n秋季到來時，北美河狸會攝取更多食物，將營養以脂肪的形式儲存在尾巴中。當冬季面臨食物短缺時，牠們就能依靠尾巴內累積的脂肪維持生存。",
+    "paragraphs": [
+      "北美河狸具有在尾巴儲存脂肪的特性。",
+      "秋季到來時，北美河狸會攝取更多食物，將營養以脂肪的形式儲存在尾巴中。當冬季面臨食物短缺時，牠們就能依靠尾巴內累積的脂肪維持生存。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18121351900755459-source-1",
+    "sourceIds": [
+      "threads-18121351900755459-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-05",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DfWjjqpkVa7",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "當冬季面臨食物短缺時，北美河狸主要依靠儲存在哪裡的脂肪維持生存？",
+      "options": [
+        "尾巴",
+        "盲腸",
+        "背部",
+        "足墊"
+      ],
+      "answer": 0,
+      "explanation": "當冬季面臨食物短缺時，牠們就能依靠尾巴內累積的脂肪維持生存。"
+    }
+  },
   {
     "id": "threads-18099329366407258",
     "category": "Threads 河狸短篇",
