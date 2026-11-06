@@ -64,6 +64,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "史密森尼國家動物園",
     "url": "https://nationalzoo.si.edu/animals/beaver"
   },
+  "threads-17915342421556781-source-1": {
+    "name": "美國國家公園管理局・阿卡迪亞",
+    "url": "https://www.nps.gov/articles/north-american-beaver-acadia.htm"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -110,6 +114,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-17915342421556781",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸耳道的防水皮膜構造",
+    "summary": "北美河狸在水下活動時，耳朵具有特殊的防水構造。",
+    "body": "北美河狸在水下活動時，耳朵具有特殊的防水構造。\n\n當北美河狸進入水中時，牠們的耳朵會貼平在頭部兩側。此時耳道內部的皮膜會關閉並形成密封，防止水進入耳道。",
+    "paragraphs": [
+      "北美河狸在水下活動時，耳朵具有特殊的防水構造。",
+      "當北美河狸進入水中時，牠們的耳朵會貼平在頭部兩側。此時耳道內部的皮膜會關閉並形成密封，防止水進入耳道。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-17915342421556781-source-1",
+    "sourceIds": [
+      "threads-17915342421556781-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-06",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DfZIWrWn3V5",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "當北美河狸進入水中時，耳道內部的皮膜關閉並形成密封的主要作用是什麼？",
+      "options": [
+        "防止水進入耳道",
+        "增強水下的聽力",
+        "調節身體的體溫",
+        "排出耳內的雜質"
+      ],
+      "answer": 0,
+      "explanation": "此時耳道內部的皮膜會關閉並形成密封，防止水進入耳道。"
+    }
+  },
   {
     "id": "threads-18121351900755459",
     "category": "Threads 河狸短篇",
