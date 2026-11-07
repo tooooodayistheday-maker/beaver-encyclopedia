@@ -68,6 +68,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "美國國家公園管理局・阿卡迪亞",
     "url": "https://www.nps.gov/articles/north-american-beaver-acadia.htm"
   },
+  "threads-17956705866289155-source-1": {
+    "name": "阿拉斯加魚類與野生動物部門",
+    "url": "https://www.adfg.alaska.gov/index.cfm?adfg=beaver.main"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -126,6 +130,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-17956705866289155",
+    "category": "Threads 河狸短篇",
+    "title": "史前巨河狸的體型與黑熊相當",
+    "summary": "現代河狸在史前時期存在一種近親物種，被稱為巨河狸。",
+    "body": "現代河狸在史前時期存在一種近親物種，被稱為巨河狸。\n\n巨河狸作為現代河狸的史前近親，擁有相當龐大的軀體。這種史前巨河狸的體型大小，相當於一隻黑熊。",
+    "paragraphs": [
+      "現代河狸在史前時期存在一種近親物種，被稱為巨河狸。",
+      "巨河狸作為現代河狸的史前近親，擁有相當龐大的軀體。這種史前巨河狸的體型大小，相當於一隻黑熊。"
+    ],
+    "species": "Threads 冷知識",
+    "scopeLabel": "原文範圍",
+    "source": "threads-17956705866289155-source-1",
+    "sourceIds": [
+      "threads-17956705866289155-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-07",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DfbtRLxGoMX",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "現代河狸的史前近親巨河狸，其體型大小相當於哪種動物？",
+      "options": [
+        "一隻黑熊",
+        "一隻海狸鼠",
+        "一隻灰狼",
+        "一隻美洲獅"
+      ],
+      "answer": 0,
+      "explanation": "這種史前巨河狸的體型大小，相當於一隻黑熊。"
+    }
+  },
   {
     "id": "threads-17915342421556781",
     "category": "Threads 河狸短篇",
