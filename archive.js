@@ -72,6 +72,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "阿拉斯加魚類與野生動物部門",
     "url": "https://www.adfg.alaska.gov/index.cfm?adfg=beaver.main"
   },
+  "threads-17913785163482539-source-1": {
+    "name": "美國國家公園管理局・冰河國家公園",
+    "url": "https://www.nps.gov/glac/learn/education/beaver-natural-history-narrative.htm"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -130,6 +134,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-17913785163482539",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸的單一配偶制與共同選址",
+    "summary": "北美河狸在伴侶關係方面實行單一配偶制。",
+    "body": "北美河狸在伴侶關係方面實行單一配偶制。\n\n在建立配偶關係之後，北美河狸會透過相互合作的方式，一起挑選合適的地點來建造水壩以及供家族棲息的巢穴。",
+    "paragraphs": [
+      "北美河狸在伴侶關係方面實行單一配偶制。",
+      "在建立配偶關係之後，北美河狸會透過相互合作的方式，一起挑選合適的地點來建造水壩以及供家族棲息的巢穴。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-17913785163482539-source-1",
+    "sourceIds": [
+      "threads-17913785163482539-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-08",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DfeSBb9mnE3",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "根據內文，北美河狸在伴侶關係方面實行何種制度？",
+      "options": [
+        "複數配偶制",
+        "單一配偶制",
+        "輪替配偶制",
+        "無配偶制度"
+      ],
+      "answer": 1,
+      "explanation": "北美河狸在伴侶關係方面實行單一配偶制。"
+    }
+  },
   {
     "id": "threads-17956705866289155",
     "category": "Threads 河狸短篇",
