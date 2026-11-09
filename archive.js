@@ -76,6 +76,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "美國國家公園管理局・冰河國家公園",
     "url": "https://www.nps.gov/glac/learn/education/beaver-natural-history-narrative.htm"
   },
+  "threads-17993749287060649-source-1": {
+    "name": "俄勒岡動物園",
+    "url": "https://www.oregonzoo.org/animals/american-beaver"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -134,6 +138,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-17993749287060649",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸啃倒八英呎大樹的時間",
+    "summary": "北美河狸為了取得食物與建築材料，會使用前門牙與下顎強大的肌肉來啃倒大型樹木。",
+    "body": "北美河狸為了取得食物與建築材料，會使用前門牙與下顎強大的肌肉來啃倒大型樹木。\n\n在進行啃咬時，北美河狸僅需五分鐘的時間，就能啃倒一棵高達八英呎的樹木。",
+    "paragraphs": [
+      "北美河狸為了取得食物與建築材料，會使用前門牙與下顎強大的肌肉來啃倒大型樹木。",
+      "在進行啃咬時，北美河狸僅需五分鐘的時間，就能啃倒一棵高達八英呎的樹木。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-17993749287060649-source-1",
+    "sourceIds": [
+      "threads-17993749287060649-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-09",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/Dfg2ujmjzON",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "北美河狸啃倒一棵高達八英呎的樹木大約需要多少時間？",
+      "options": [
+        "五分鐘的時間",
+        "十五分鐘的時間",
+        "三十分鐘的時間",
+        "一小時的時間"
+      ],
+      "answer": 0,
+      "explanation": "在進行啃咬時，北美河狸僅需五分鐘的時間，就能啃倒一棵高達八英呎的樹木。"
+    }
+  },
   {
     "id": "threads-17913785163482539",
     "category": "Threads 河狸短篇",
