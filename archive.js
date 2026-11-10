@@ -80,6 +80,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "俄勒岡動物園",
     "url": "https://www.oregonzoo.org/animals/american-beaver"
   },
+  "threads-18081056204735726-source-1": {
+    "name": "美國國家公園管理局・落磯山",
+    "url": "https://www.nps.gov/romo/learn/nature/beavers.htm"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -138,6 +142,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18081056204735726",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸對棲息溪流坡度的偏好",
+    "summary": "北美河狸在挑選棲息與活動的溪流環境時，通常偏好地勢不會太過陡峭的區域。",
+    "body": "北美河狸在挑選棲息與活動的溪流環境時，通常偏好地勢不會太過陡峭的區域。\n\n根據落磯山國家公園的資料，北美河狸一般偏好坡度小於百分之六的溪流。在該溪流環境的測量標準中，百分之一的坡度下降，代表每前進一百英呎的距離，海拔高度就會下降一英呎。",
+    "paragraphs": [
+      "北美河狸在挑選棲息與活動的溪流環境時，通常偏好地勢不會太過陡峭的區域。",
+      "根據落磯山國家公園的資料，北美河狸一般偏好坡度小於百分之六的溪流。在該溪流環境的測量標準中，百分之一的坡度下降，代表每前進一百英呎的距離，海拔高度就會下降一英呎。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18081056204735726-source-1",
+    "sourceIds": [
+      "threads-18081056204735726-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-10",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/Dfjbu2nDxlT",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "根據落磯山國家公園的資料，北美河狸一般偏好的溪流坡度條件為何？",
+      "options": [
+        "坡度小於百分之六",
+        "坡度大於百分之十二",
+        "坡度等於百分之十五",
+        "坡度超過百分之二十"
+      ],
+      "answer": 0,
+      "explanation": "根據落磯山國家公園的資料，北美河狸一般偏好坡度小於百分之六的溪流。"
+    }
+  },
   {
     "id": "threads-17993749287060649",
     "category": "Threads 河狸短篇",
