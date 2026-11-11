@@ -84,6 +84,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "美國國家公園管理局・落磯山",
     "url": "https://www.nps.gov/romo/learn/nature/beavers.htm"
   },
+  "threads-17907385230351732-source-1": {
+    "name": "密西根大學動物多樣性資料庫・北美河狸",
+    "url": "https://animaldiversity.org/accounts/Castor_canadensis/"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -142,6 +146,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-17907385230351732",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸建造運河漂浮運送食物",
+    "summary": "北美河狸為了尋找食物，會離開住所移動相當長的一段距離。",
+    "body": "北美河狸為了尋找食物，會離開住所移動相當長的一段距離。\n\n當北美河狸發現良好的食物來源時，牠們會建造通往該食物來源的運河。透過這些運河，北美河狸便能將食物以漂浮的方式運送回自己的巢穴。",
+    "paragraphs": [
+      "北美河狸為了尋找食物，會離開住所移動相當長的一段距離。",
+      "當北美河狸發現良好的食物來源時，牠們會建造通往該食物來源的運河。透過這些運河，北美河狸便能將食物以漂浮的方式運送回自己的巢穴。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-17907385230351732-source-1",
+    "sourceIds": [
+      "threads-17907385230351732-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-11",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DfmAa4zoz0y",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "根據內容，北美河狸建造通往食物來源的運河主要有何用途？",
+      "options": [
+        "在冬季進行長時間冬眠",
+        "將食物以漂浮的方式運送回自己的巢穴",
+        "作為幼崽的專屬育兒室",
+        "阻擋大型魚類逆流遊動"
+      ],
+      "answer": 1,
+      "explanation": "透過這些運河，北美河狸便能將食物以漂浮的方式運送回自己的巢穴。"
+    }
+  },
   {
     "id": "threads-18081056204735726",
     "category": "Threads 河狸短篇",
