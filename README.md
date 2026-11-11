@@ -9,7 +9,6 @@
 - 僅收錄河狸主題；早期其他題材的冷知識不匯入。冷知識採淺色插圖卡片，長篇「河狸事件簿」為獨立深綠色區塊，使用書封式橫向卡片及閱讀時間。搜尋與收藏可跨兩區使用。
 - 每日短篇與每週事件簿發文成功後立即呼叫網站同步；本機 Windows「Beaver Website Sync」每 30 分鐘另行補同步。電腦需開機、登入並可連網；不另發 Threads 貼文。
 - 未來新發布的河狸 Threads 貼文會在來源留言附上本站連結；已建立發布容器的舊文章不改寫。
-- SUPER 8 聊天：`chat.js`，組織 ID `zbKDXBGe2WgwKw==`，若服務拒絕來源網站須至 SUPER 8 管理介面設定允許網址。
 - GA4：`config.js` 的 `gaId`。分析在使用者允許後才載入，本機預覽不送出；不收集搜尋原文。
 - 目前 GA4 評估 ID：`G-3NP76T1YXT`（河狸網站專用）。
 - 自訂事件：`category_select`、`fact_open`、`fact_bookmark`、`random_fact`、`share`、`quiz_answer`、`quiz_complete`。
