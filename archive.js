@@ -88,6 +88,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "密西根大學動物多樣性資料庫・北美河狸",
     "url": "https://animaldiversity.org/accounts/Castor_canadensis/"
   },
+  "threads-18098669102463549-source-1": {
+    "name": "密西根大學動物多樣性資料庫・歐亞河狸",
+    "url": "https://animaldiversity.org/accounts/Castor_fiber/"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -146,6 +150,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18098669102463549",
+    "category": "Threads 河狸短篇",
+    "title": "歐亞河狸水壩對無脊椎動物群落的改變",
+    "summary": "歐亞河狸在建造水壩時會改變水流，並累積沉積物與碎屑。這些沉積物與碎屑會使水體中的碳增加，並減少有效氮與酸度。",
+    "body": "歐亞河狸在建造水壩時會改變水流，並累積沉積物與碎屑。這些沉積物與碎屑會使水體中的碳增加，並減少有效氮與酸度。\n\n這些環境條件的改變，會使當地的無脊椎動物群落發生變化，從流水無脊椎動物轉變為靜水無脊椎動物。",
+    "paragraphs": [
+      "歐亞河狸在建造水壩時會改變水流，並累積沉積物與碎屑。這些沉積物與碎屑會使水體中的碳增加，並減少有效氮與酸度。",
+      "這些環境條件的改變，會使當地的無脊椎動物群落發生變化，從流水無脊椎動物轉變為靜水無脊椎動物。"
+    ],
+    "species": "歐亞河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18098669102463549-source-1",
+    "sourceIds": [
+      "threads-18098669102463549-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-12",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DfolUx-lNGo",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "歐亞河狸建造水壩累積沉積物與碎屑後，會使當地的無脊椎動物群落產生何種變化？",
+      "options": [
+        "從流水無脊椎動物轉變為靜水無脊椎動物",
+        "從靜水無脊椎動物轉變為流水無脊椎動物",
+        "從水生無脊椎動物轉變為陸生無脊椎動物",
+        "從草食性無脊椎動物轉變為肉食性無脊椎動物"
+      ],
+      "answer": 0,
+      "explanation": "這些環境條件的改變，會使當地的無脊椎動物群落發生變化，從流水無脊椎動物轉變為靜水無脊椎動物。"
+    }
+  },
   {
     "id": "threads-17907385230351732",
     "category": "Threads 河狸短篇",
