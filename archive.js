@@ -92,6 +92,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "密西根大學動物多樣性資料庫・歐亞河狸",
     "url": "https://animaldiversity.org/accounts/Castor_fiber/"
   },
+  "threads-17959343193269505-source-1": {
+    "name": "史密森尼國家動物園",
+    "url": "https://nationalzoo.si.edu/animals/beaver"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -150,6 +154,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-17959343193269505",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸防水毛皮的油腺分泌物",
+    "summary": "北美河狸在靠近肛門處擁有重要的油腺，這些腺體所分泌的油脂，會被牠們用來維持毛皮的防水功能。",
+    "body": "北美河狸在靠近肛門處擁有重要的油腺，這些腺體所分泌的油脂，會被牠們用來維持毛皮的防水功能。\n\n北美河狸油腺分泌的油脂在雄性與雌性之間存在些微差異。這項特殊的油脂成分同時也被牠們用於繁殖溝通。",
+    "paragraphs": [
+      "北美河狸在靠近肛門處擁有重要的油腺，這些腺體所分泌的油脂，會被牠們用來維持毛皮的防水功能。",
+      "北美河狸油腺分泌的油脂在雄性與雌性之間存在些微差異。這項特殊的油脂成分同時也被牠們用於繁殖溝通。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-17959343193269505-source-1",
+    "sourceIds": [
+      "threads-17959343193269505-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-13",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DfrJ-9wFAdF",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "北美河狸油腺所分泌的油脂，除了維持毛皮防水外還被用於何種用途？",
+      "options": [
+        "用於繁殖溝通",
+        "儲存越冬脂肪",
+        "幫助水下呼吸",
+        "加速傷口癒合"
+      ],
+      "answer": 0,
+      "explanation": "這項特殊的油脂成分同時也被牠們用於繁殖溝通。"
+    }
+  },
   {
     "id": "threads-18098669102463549",
     "category": "Threads 河狸短篇",
