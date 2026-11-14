@@ -96,6 +96,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "史密森尼國家動物園",
     "url": "https://nationalzoo.si.edu/animals/beaver"
   },
+  "threads-18036911303670167-source-1": {
+    "name": "美國國家公園管理局・阿卡迪亞",
+    "url": "https://www.nps.gov/articles/north-american-beaver-acadia.htm"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -154,6 +158,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18036911303670167",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸腳部神經感知陸地震動",
+    "summary": "北美河狸擁有適合游泳的大型蹼狀後腳，在砍伐樹木時，這雙後腳也能在陸地上提供身體穩定度。",
+    "body": "北美河狸擁有適合游泳的大型蹼狀後腳，在砍伐樹木時，這雙後腳也能在陸地上提供身體穩定度。\n\n北美河狸的腳部還含有特殊神經，能夠感知來自陸地掠食者的震動。",
+    "paragraphs": [
+      "北美河狸擁有適合游泳的大型蹼狀後腳，在砍伐樹木時，這雙後腳也能在陸地上提供身體穩定度。",
+      "北美河狸的腳部還含有特殊神經，能夠感知來自陸地掠食者的震動。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18036911303670167-source-1",
+    "sourceIds": [
+      "threads-18036911303670167-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-14",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DftuwIelJRk",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "北美河狸的腳部特殊神經具有什麼功能？",
+      "options": [
+        "協助在寒冷冬季維持體溫",
+        "能夠感知來自陸地掠食者的震動",
+        "在水下閉氣長達十五分鐘",
+        "分泌油脂維持毛皮防水"
+      ],
+      "answer": 1,
+      "explanation": "北美河狸的腳部還含有特殊神經，能夠感知來自陸地掠食者的震動。"
+    }
+  },
   {
     "id": "threads-17959343193269505",
     "category": "Threads 河狸短篇",
