@@ -100,6 +100,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "美國國家公園管理局・阿卡迪亞",
     "url": "https://www.nps.gov/articles/north-american-beaver-acadia.htm"
   },
+  "threads-18240897934321252-source-1": {
+    "name": "阿拉斯加魚類與野生動物部門",
+    "url": "https://www.adfg.alaska.gov/index.cfm?adfg=beaver.main"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -158,6 +162,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18240897934321252",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸每年為巢穴增添材料",
+    "summary": "無論巢穴是否需要修繕，北美河狸每年都會為巢穴增添材料。",
+    "body": "無論巢穴是否需要修繕，北美河狸每年都會為巢穴增添材料。\n\n同一個巢穴會被北美河狸家族年復一年地使用，作為全年的家。因為每年持續增添材料，有些巢穴會變得相當龐大。",
+    "paragraphs": [
+      "無論巢穴是否需要修繕，北美河狸每年都會為巢穴增添材料。",
+      "同一個巢穴會被北美河狸家族年復一年地使用，作為全年的家。因為每年持續增添材料，有些巢穴會變得相當龐大。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18240897934321252-source-1",
+    "sourceIds": [
+      "threads-18240897934321252-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-15",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DfwTpJJFB8y",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "北美河狸每年無論是否需要修繕，都會對巢穴採取什麼行動？",
+      "options": [
+        "為巢穴增添材料",
+        "徹底拆除重建",
+        "更換主要通道",
+        "放棄現有巢穴"
+      ],
+      "answer": 0,
+      "explanation": "無論巢穴是否需要修繕，北美河狸每年都會為巢穴增添材料。"
+    }
+  },
   {
     "id": "threads-18036911303670167",
     "category": "Threads 河狸短篇",
