@@ -104,6 +104,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "阿拉斯加魚類與野生動物部門",
     "url": "https://www.adfg.alaska.gov/index.cfm?adfg=beaver.main"
   },
+  "threads-18118174556146323-source-1": {
+    "name": "美國國家公園管理局・冰河國家公園",
+    "url": "https://www.nps.gov/glac/learn/education/beaver-natural-history-narrative.htm"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -162,6 +166,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18118174556146323",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸在大型溪流與河流中不築水壩",
+    "summary": "北美河狸通常會在溪流中建造水壩來形成深水池，並在靠近岸邊的水池中搭建巢穴。",
+    "body": "北美河狸通常會在溪流中建造水壩來形成深水池，並在靠近岸邊的水池中搭建巢穴。\n\n然而，這項築壩行為並非適用於所有水域。在大型溪流與河流中，北美河狸並不會建造水壩。",
+    "paragraphs": [
+      "北美河狸通常會在溪流中建造水壩來形成深水池，並在靠近岸邊的水池中搭建巢穴。",
+      "然而，這項築壩行為並非適用於所有水域。在大型溪流與河流中，北美河狸並不會建造水壩。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18118174556146323-source-1",
+    "sourceIds": [
+      "threads-18118174556146323-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-17",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/Df1dV0Kk4-C",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "根據內容，北美河狸在下列哪種水域環境中並不會建造水壩？",
+      "options": [
+        "大型溪流與河流",
+        "深水池",
+        "靠近岸邊的水池",
+        "溪流"
+      ],
+      "answer": 0,
+      "explanation": "在大型溪流與河流中，北美河狸並不會建造水壩。"
+    }
+  },
   {
     "id": "threads-18240897934321252",
     "category": "Threads 河狸短篇",
