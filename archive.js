@@ -108,6 +108,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "美國國家公園管理局・冰河國家公園",
     "url": "https://www.nps.gov/glac/learn/education/beaver-natural-history-narrative.htm"
   },
+  "threads-18115907771052641-source-1": {
+    "name": "俄勒岡動物園",
+    "url": "https://www.oregonzoo.org/animals/american-beaver"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -166,6 +170,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18115907771052641",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸一百三十天的懷孕期",
+    "summary": "雌性北美河狸在繁衍後代時，懷孕期為一百三十天。",
+    "body": "雌性北美河狸在繁衍後代時，懷孕期為一百三十天。\n\n雌性北美河狸大約在三歲時產下第一窩幼崽。在經過一百三十天的懷孕期後，雌性北美河狸會產下一窩二至四隻被稱為幼崽的小河狸。",
+    "paragraphs": [
+      "雌性北美河狸在繁衍後代時，懷孕期為一百三十天。",
+      "雌性北美河狸大約在三歲時產下第一窩幼崽。在經過一百三十天的懷孕期後，雌性北美河狸會產下一窩二至四隻被稱為幼崽的小河狸。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18115907771052641-source-1",
+    "sourceIds": [
+      "threads-18115907771052641-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-18",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/Df4CUdjE4dA",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "根據本則內容，雌性北美河狸的懷孕期為多久？",
+      "options": [
+        "三十天",
+        "六十天",
+        "九十天",
+        "一百三十天"
+      ],
+      "answer": 3,
+      "explanation": "雌性北美河狸在繁衍後代時，懷孕期為一百三十天。"
+    }
+  },
   {
     "id": "threads-18118174556146323",
     "category": "Threads 河狸短篇",
