@@ -112,6 +112,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "俄勒岡動物園",
     "url": "https://www.oregonzoo.org/animals/american-beaver"
   },
+  "threads-17908104426350759-source-1": {
+    "name": "美國國家公園管理局・落磯山",
+    "url": "https://www.nps.gov/romo/learn/nature/beavers.htm"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -170,6 +174,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-17908104426350759",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸對非木本植物的攝食偏好",
+    "summary": "北美河狸在日常中會攝食木本與非木本植物，但牠們實際上偏好非木本植物。",
+    "body": "北美河狸在日常中會攝食木本與非木本植物，但牠們實際上偏好非木本植物。\n\n當非木本植物無法取得時，北美河狸才會儲存大量的白楊與柳樹，作為冬季消耗的食物。",
+    "paragraphs": [
+      "北美河狸在日常中會攝食木本與非木本植物，但牠們實際上偏好非木本植物。",
+      "當非木本植物無法取得時，北美河狸才會儲存大量的白楊與柳樹，作為冬季消耗的食物。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-17908104426350759-source-1",
+    "sourceIds": [
+      "threads-17908104426350759-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-19",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/Df6myhdE6KE",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "北美河狸在飲食選擇上偏好哪一類植物？",
+      "options": [
+        "木本植物",
+        "非木本植物",
+        "水生藻類",
+        "乾燥種子"
+      ],
+      "answer": 1,
+      "explanation": "北美河狸在日常中會攝食木本與非木本植物，但牠們實際上偏好非木本植物。"
+    }
+  },
   {
     "id": "threads-18115907771052641",
     "category": "Threads 河狸短篇",
