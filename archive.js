@@ -116,6 +116,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "美國國家公園管理局・落磯山",
     "url": "https://www.nps.gov/romo/learn/nature/beavers.htm"
   },
+  "threads-18150968881603917-source-1": {
+    "name": "密西根大學動物多樣性資料庫・北美河狸",
+    "url": "https://animaldiversity.org/accounts/Castor_canadensis/"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -174,6 +178,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18150968881603917",
+    "category": "Threads 河狸短篇",
+    "title": "雌性北美河狸以扁平尾巴作為分娩墊",
+    "summary": "雌性北美河狸在巢穴中分娩時，會將扁平的尾巴作為分娩墊。",
+    "body": "雌性北美河狸在巢穴中分娩時，會將扁平的尾巴作為分娩墊。\n\n在準備分娩時，雌性北美河狸會在巢穴內準備柔軟的床。隨後，牠會將扁平的尾巴當作一種分娩墊，並在幼崽出生後將其舔拭乾淨並進行哺乳。",
+    "paragraphs": [
+      "雌性北美河狸在巢穴中分娩時，會將扁平的尾巴作為分娩墊。",
+      "在準備分娩時，雌性北美河狸會在巢穴內準備柔軟的床。隨後，牠會將扁平的尾巴當作一種分娩墊，並在幼崽出生後將其舔拭乾淨並進行哺乳。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18150968881603917-source-1",
+    "sourceIds": [
+      "threads-18150968881603917-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-20",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/Df9LkljgX6a",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "雌性北美河狸在分娩時，會將身體的哪一個構造當作分娩墊使用？",
+      "options": [
+        "扁平的尾巴",
+        "蹼狀後腳",
+        "防水毛皮",
+        "橘色門牙"
+      ],
+      "answer": 0,
+      "explanation": "雌性北美河狸在巢穴中分娩時，會將扁平的尾巴作為分娩墊。"
+    }
+  },
   {
     "id": "threads-17908104426350759",
     "category": "Threads 河狸短篇",
