@@ -120,6 +120,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "密西根大學動物多樣性資料庫・北美河狸",
     "url": "https://animaldiversity.org/accounts/Castor_canadensis/"
   },
+  "threads-18141068899634997-source-1": {
+    "name": "密西根大學動物多樣性資料庫・歐亞河狸",
+    "url": "https://animaldiversity.org/accounts/Castor_fiber/"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -178,6 +182,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18141068899634997",
+    "category": "Threads 河狸短篇",
+    "title": "歐亞河狸作為多達三十三種蟎蟲的宿主",
+    "summary": "歐亞河狸是蟎蟲的宿主。在任何時候，歐亞河狸的身上都可能同時生活著多達三十三種不同種類的蟎蟲。",
+    "body": "歐亞河狸是蟎蟲的宿主。在任何時候，歐亞河狸的身上都可能同時生活著多達三十三種不同種類的蟎蟲。\n\n在生態系統中，這些蟎蟲屬於歐亞河狸身上的共生或寄生生物。歐亞河狸作為宿主，隨時都可能帶有這些多樣的微小生物。",
+    "paragraphs": [
+      "歐亞河狸是蟎蟲的宿主。在任何時候，歐亞河狸的身上都可能同時生活著多達三十三種不同種類的蟎蟲。",
+      "在生態系統中，這些蟎蟲屬於歐亞河狸身上的共生或寄生生物。歐亞河狸作為宿主，隨時都可能帶有這些多樣的微小生物。"
+    ],
+    "species": "歐亞河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18141068899634997-source-1",
+    "sourceIds": [
+      "threads-18141068899634997-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-21",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/Df_wmZWHb68",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "在任何時候，歐亞河狸的身上可能同時生活著多少種不同種類的蟎蟲？",
+      "options": [
+        "多達三種不同種類的蟎蟲",
+        "多達十三種不同種類的蟎蟲",
+        "多達二十三種不同種類的蟎蟲",
+        "多達三十三種不同種類的蟎蟲"
+      ],
+      "answer": 3,
+      "explanation": "在任何時候，歐亞河狸的身上都可能同時生活著多達三十三種不同種類的蟎蟲。"
+    }
+  },
   {
     "id": "threads-18150968881603917",
     "category": "Threads 河狸短篇",
