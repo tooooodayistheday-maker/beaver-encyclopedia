@@ -124,6 +124,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "密西根大學動物多樣性資料庫・歐亞河狸",
     "url": "https://animaldiversity.org/accounts/Castor_fiber/"
   },
+  "threads-18131664229896298-source-1": {
+    "name": "史密森尼國家動物園",
+    "url": "https://nationalzoo.si.edu/animals/beaver"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -182,6 +186,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18131664229896298",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸超大肺部的水下潛水能力",
+    "summary": "北美河狸在陸地上的行動極為笨拙，容易受到掠食者攻擊，但在水中的活動能力卻大不相同。",
+    "body": "北美河狸在陸地上的行動極為笨拙，容易受到掠食者攻擊，但在水中的活動能力卻大不相同。\n\n北美河狸在水中的游泳速度可達每小時十公里。超大的肺部使北美河狸能在水下持續潛留長達十五分鐘。在水下潛留期間，牠們能移動超過半英哩的距離。",
+    "paragraphs": [
+      "北美河狸在陸地上的行動極為笨拙，容易受到掠食者攻擊，但在水中的活動能力卻大不相同。",
+      "北美河狸在水中的游泳速度可達每小時十公里。超大的肺部使北美河狸能在水下持續潛留長達十五分鐘。在水下潛留期間，牠們能移動超過半英哩的距離。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18131664229896298-source-1",
+    "sourceIds": [
+      "threads-18131664229896298-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-22",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DgCVQuKHfJx",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "北美河狸體內的超大肺部能讓牠們在水下持續潛留多長時間？",
+      "options": [
+        "長達五分鐘",
+        "長達十五分鐘",
+        "長達三十分鐘",
+        "長達一小時"
+      ],
+      "answer": 1,
+      "explanation": "超大的肺部使北美河狸能在水下持續潛留長達十五分鐘。"
+    }
+  },
   {
     "id": "threads-18141068899634997",
     "category": "Threads 河狸短篇",
