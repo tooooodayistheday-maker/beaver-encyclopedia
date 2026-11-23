@@ -1,0 +1,860 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "WorksHub+ 河狸冷知識 API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://workshub-beaver-facts-api.tooooodayistheday.chatgpt.site"
+    }
+  ],
+  "paths": {
+    "/api/v1/facts": {
+      "get": {
+        "summary": "清單",
+        "security": [
+          {
+            "bearerAuth": []
+          },
+          {
+            "apiKeyAuth": []
+          },
+          {
+            "basicAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "data",
+                    "next_cursor",
+                    "total"
+                  ],
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Record"
+                      }
+                    },
+                    "next_cursor": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "total": {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  }
+                },
+                "example": {
+                  "data": [
+                    {
+                      "id": "threads-17959604640337125",
+                      "title": "北美河狸工作時各自獨立且鮮少接觸",
+                      "fact": "北美河狸是高度群居的動物，生活在由家族組成的群體中。",
+                      "story": "北美河狸是高度群居的動物，生活在由家族組成的群體中。\n\n在阿卡迪亞國家公園的紀錄中，北美河狸被視為最忙碌的居民之一。雖然牠們以勤奮聞名，但在工作時各自獨立，彼此之間往往鮮少接觸。",
+                      "category": "Threads 河狸短篇",
+                      "source_name": "美國國家公園管理局・阿卡迪亞",
+                      "source_url": "https://www.nps.gov/articles/north-american-beaver-acadia.htm",
+                      "threads_url": "https://www.threads.com/@tooooodayistheday/post/DgE6AzJHRKo",
+                      "url": "https://tooooodayistheday-maker.github.io/beaver-encyclopedia/#fact=threads-17959604640337125",
+                      "published_date": "2026-11-23",
+                      "primary_source_url": "https://www.nps.gov/articles/north-american-beaver-acadia.htm",
+                      "source_count": 1,
+                      "is_test": false,
+                      "updated_at": "2026-11-23T17:18:55+08:00"
+                    },
+                    {
+                      "id": "integration-utf8",
+                      "title": "整合欄位測試：中文與 emoji 🦫📚",
+                      "category": "整合測試",
+                      "url": "https://tooooodayistheday-maker.github.io/beaver-encyclopedia/api-test.html",
+                      "published_date": "2026-11-23",
+                      "primary_source_url": "",
+                      "source_count": 0,
+                      "is_test": true,
+                      "fact": "這是整合測試資料：🦫📚中文與 emoji 都應原樣保留。",
+                      "story": "中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \"hello\"、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \"hello\"、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \"hello\"、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \"hello\"、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \"hello\"、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \"hello\"、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \"hello\"、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \"hello\"、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \"hello\"、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \"hello\"、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \"hello\"、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \"hello\"、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。",
+                      "source_name": "",
+                      "source_url": "",
+                      "threads_url": "",
+                      "updated_at": "2026-11-23T17:18:55+08:00"
+                    }
+                  ],
+                  "next_cursor": "<請使用實際回應的游標>",
+                  "total": 61
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "參數或游標錯誤",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "驗證失敗",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "找不到資料",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "僅支援 GET",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "502": {
+            "description": "上游資料暫時無法讀取",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "API 尚未完成設定",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "default": 20,
+              "minimum": 1,
+              "maximum": 50
+            }
+          },
+          {
+            "name": "cursor",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "category",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "updated_after",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/facts/{id}": {
+      "get": {
+        "summary": "單筆",
+        "security": [
+          {
+            "bearerAuth": []
+          },
+          {
+            "apiKeyAuth": []
+          },
+          {
+            "basicAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Record"
+                },
+                "example": {
+                  "id": "orange",
+                  "title": "橘色門牙，是牠的天然裝備",
+                  "fact": "不是忘記刷牙，而是牙齒琺瑯質含有鐵。",
+                  "story": "河狸門牙外層的鐵讓牙齒呈現深橘色，也能強化琺瑯質，協助承受啃咬。看見橘色牙齒，可別急著替牠預約洗牙。",
+                  "category": "身體祕密",
+                  "source_name": "Smithsonian’s National Zoo · Beaver",
+                  "source_url": "https://nationalzoo.si.edu/animals/beaver",
+                  "threads_url": "",
+                  "url": "https://tooooodayistheday-maker.github.io/beaver-encyclopedia/#fact=orange",
+                  "published_date": "2026-10-28",
+                  "primary_source_url": "https://nationalzoo.si.edu/animals/beaver",
+                  "source_count": 1,
+                  "is_test": false,
+                  "updated_at": "2026-11-23T17:18:55+08:00"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "參數或游標錯誤",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "驗證失敗",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "找不到資料",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "僅支援 GET",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "502": {
+            "description": "上游資料暫時無法讀取",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "API 尚未完成設定",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "orange"
+          }
+        ]
+      }
+    },
+    "/api/v1/facts/latest": {
+      "get": {
+        "summary": "最新一篇",
+        "security": [
+          {
+            "bearerAuth": []
+          },
+          {
+            "apiKeyAuth": []
+          },
+          {
+            "basicAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Record"
+                },
+                "example": {
+                  "id": "threads-17959604640337125",
+                  "title": "北美河狸工作時各自獨立且鮮少接觸",
+                  "fact": "北美河狸是高度群居的動物，生活在由家族組成的群體中。",
+                  "story": "北美河狸是高度群居的動物，生活在由家族組成的群體中。\n\n在阿卡迪亞國家公園的紀錄中，北美河狸被視為最忙碌的居民之一。雖然牠們以勤奮聞名，但在工作時各自獨立，彼此之間往往鮮少接觸。",
+                  "category": "Threads 河狸短篇",
+                  "source_name": "美國國家公園管理局・阿卡迪亞",
+                  "source_url": "https://www.nps.gov/articles/north-american-beaver-acadia.htm",
+                  "threads_url": "https://www.threads.com/@tooooodayistheday/post/DgE6AzJHRKo",
+                  "url": "https://tooooodayistheday-maker.github.io/beaver-encyclopedia/#fact=threads-17959604640337125",
+                  "published_date": "2026-11-23",
+                  "primary_source_url": "https://www.nps.gov/articles/north-american-beaver-acadia.htm",
+                  "source_count": 1,
+                  "is_test": false,
+                  "updated_at": "2026-11-23T17:18:55+08:00"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "參數或游標錯誤",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "驗證失敗",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "找不到資料",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "僅支援 GET",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "502": {
+            "description": "上游資料暫時無法讀取",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "API 尚未完成設定",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/facts/today": {
+      "get": {
+        "summary": "每日一則",
+        "security": [
+          {
+            "bearerAuth": []
+          },
+          {
+            "apiKeyAuth": []
+          },
+          {
+            "basicAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Record"
+                },
+                "example": {
+                  "id": "rodent",
+                  "title": "牠是齧齒類，不是水獺",
+                  "fact": "認識河狸，先從大門牙開始。",
+                  "story": "河狸屬於齧齒目，擁有兩對明顯的鑿形門牙。持續生長的門牙與扁平有鱗尾巴，是認識牠的線索。",
+                  "category": "身體祕密",
+                  "source_name": "美國國家公園署 · 河狸自然史",
+                  "source_url": "https://www.nps.gov/glac/learn/education/beaver-natural-history-narrative.htm",
+                  "threads_url": "",
+                  "url": "https://tooooodayistheday-maker.github.io/beaver-encyclopedia/#fact=rodent",
+                  "published_date": "2026-10-28",
+                  "primary_source_url": "https://www.nps.gov/glac/learn/education/beaver-natural-history-narrative.htm",
+                  "source_count": 1,
+                  "is_test": false,
+                  "updated_at": "2026-11-23T17:18:55+08:00"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "參數或游標錯誤",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "驗證失敗",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "找不到資料",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "僅支援 GET",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "502": {
+            "description": "上游資料暫時無法讀取",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "API 尚未完成設定",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/categories": {
+      "get": {
+        "summary": "分類",
+        "security": [
+          {
+            "bearerAuth": []
+          },
+          {
+            "apiKeyAuth": []
+          },
+          {
+            "basicAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "data",
+                    "next_cursor",
+                    "total"
+                  ],
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "count": {
+                            "type": "integer"
+                          },
+                          "published_date": {
+                            "type": "string",
+                            "format": "date"
+                          },
+                          "updated_at": {
+                            "type": "string",
+                            "format": "date-time"
+                          }
+                        }
+                      }
+                    },
+                    "next_cursor": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "total": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "example": {
+                  "data": [
+                    {
+                      "id": "threads-short",
+                      "title": "Threads 河狸短篇",
+                      "count": 33,
+                      "published_date": "2026-10-21",
+                      "updated_at": "2026-11-23T17:18:55+08:00"
+                    },
+                    {
+                      "id": "integration-test",
+                      "title": "整合測試",
+                      "count": 1,
+                      "published_date": "2026-11-23",
+                      "updated_at": "2026-11-23T17:18:55+08:00"
+                    },
+                    {
+                      "id": "beaver-chronicles",
+                      "title": "河狸事件簿",
+                      "count": 6,
+                      "published_date": "2026-10-22",
+                      "updated_at": "2026-11-23T17:18:55+08:00"
+                    },
+                    {
+                      "id": "ecology",
+                      "title": "生態影響",
+                      "count": 5,
+                      "published_date": "2026-10-28",
+                      "updated_at": "2026-11-23T17:18:55+08:00"
+                    },
+                    {
+                      "id": "daily-life",
+                      "title": "生活日常",
+                      "count": 4,
+                      "published_date": "2026-10-28",
+                      "updated_at": "2026-11-23T17:18:55+08:00"
+                    },
+                    {
+                      "id": "engineering",
+                      "title": "築壩工程",
+                      "count": 6,
+                      "published_date": "2026-10-28",
+                      "updated_at": "2026-11-23T17:18:55+08:00"
+                    },
+                    {
+                      "id": "body-secrets",
+                      "title": "身體祕密",
+                      "count": 6,
+                      "published_date": "2026-10-28",
+                      "updated_at": "2026-11-23T17:18:55+08:00"
+                    }
+                  ],
+                  "next_cursor": null,
+                  "total": 7
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "參數或游標錯誤",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "驗證失敗",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "找不到資料",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "僅支援 GET",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "502": {
+            "description": "上游資料暫時無法讀取",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "API 尚未完成設定",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "default": 20,
+              "minimum": 1,
+              "maximum": 50
+            }
+          },
+          {
+            "name": "cursor",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "category",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "updated_after",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      },
+      "apiKeyAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-Key"
+      },
+      "basicAuth": {
+        "type": "http",
+        "scheme": "basic"
+      }
+    },
+    "schemas": {
+      "Record": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "fact",
+          "story",
+          "category",
+          "source_name",
+          "source_url",
+          "threads_url",
+          "url",
+          "published_date",
+          "primary_source_url",
+          "source_count",
+          "is_test",
+          "updated_at"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "fact": {
+            "type": "string",
+            "maxLength": 80
+          },
+          "story": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "source_name": {
+            "type": "string"
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "threads_url": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "published_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "primary_source_url": {
+            "type": "string"
+          },
+          "source_count": {
+            "type": "integer"
+          },
+          "is_test": {
+            "type": "boolean"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "Error": {
+        "type": "object",
+        "required": [
+          "error"
+        ],
+        "properties": {
+          "error": {
+            "type": "object",
+            "required": [
+              "code",
+              "message"
+            ],
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

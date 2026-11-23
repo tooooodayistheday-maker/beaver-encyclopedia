@@ -1,0 +1,303 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>WorksHub+ 內容 API v1 文件</title><style>body{max-width:1050px;margin:40px auto;padding:0 24px;font:17px/1.8 system-ui;color:#292333;background:#faf9f4}h1,h2{line-height:1.4}h2{margin-top:55px;border-top:1px solid #ccc;padding-top:20px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#eeede7;padding:18px;font:14px/1.7 monospace}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:10px;text-align:left}a{overflow-wrap:anywhere}</style><h1>WorksHub+ 內容 API v1</h1><p>兩組 GET-only、伺服器對伺服器 API。憑證另行提供，本文不含金鑰。第一版是公開 GitHub Pages JSON；第二版支援驗證、查詢與游標分頁。</p><h2>中台欄位對應</h2><ul><li>資料陣列路徑：<code>data</code>（JSONPath：<code>$.data</code>）</li><li>下一頁游標回應路徑：<code>next_cursor</code>（JSONPath：<code>$.next_cursor</code>）</li><li>下一次請求的 query 名稱：<code>cursor</code></li><li><code>next_cursor = null</code> 停止抓取。空 cursor 視為第一頁；不要自行拆解或修改游標。</li><li><code>total</code> 是篩選後、分頁前的總筆數；每頁筆數是 <code>data.length</code>。</li></ul><p>這裡提供常見的根層 next_cursor 格式。仍需你在 WorksHub+ 建測試連接器，確認中台實際接受的游標設定。</p><h2>第二版驗證：每次擇一</h2><pre>Authorization: Bearer ${BEARER_TOKEN}
+
+X-API-Key: ${API_KEY}
+
+Authorization: Basic ${BASE64_USERNAME_COLON_PASSWORD}</pre><p>Basic 請在中台分別填入 username 與 password，由中台組出 Base64。請勿把憑證放在 URL/query 中。Worker 憑證只由環境 Secret bindings 讀取，不寫進程式、公開檔案或本文。每組服務使用各自的測試憑證。若同時送 Authorization 與 X-API-Key，回 401，避免驗證方式混淆。</p><pre>HTTP 401
+{"error":{"code":"unauthorized","message":"缺少或無效的驗證憑證；請擇一使用 Bearer、X-API-Key 或 Basic Auth。"}}</pre><h2>清單查詢參數</h2><table><tr><th>參數</th><th>規則</th></tr><tr><td>limit</td><td>預設 20；1–50 的整數，超過範圍回 400。</td></tr><tr><td>cursor</td><td>使用上一頁回應的 next_cursor；其他篩選條件維持一致。可以調整 limit。</td></tr><tr><td>category</td><td>分類名稱或 categories 回應的 id，例如 psychology、engineering、integration-test。空白表示不篩選。</td></tr><tr><td>q</td><td>標題、摘要、情境與正文的關鍵字；不區分英文字母大小寫，上限 200 字元。</td></tr><tr><td>updated_after</td><td>ISO 日期或含時區的完整時間；僅回 updated_at 嚴格晚於該時間的資料。只有日期時，視為台灣時間 00:00:00。使用 URL encoding，避免 +08:00 的加號變成空白。</td></tr></table><p>清單依 published_date 降冪、id 降冪排序。改變 category、q 或 updated_after 後，必須清除 cursor。資料來源更新使游標快照過期時回 400/cursor_expired，請從第一頁重抓。未支援或重複的參數回 400。</p><h2>這個詞，是什麼？</h2><p>第二版 API Base：<a href="https://workshub-word-notes-api.tooooodayistheday.chatgpt.site">https://workshub-word-notes-api.tooooodayistheday.chatgpt.site</a></p><p>第一版不分頁清單：<a href="https://tooooodayistheday-maker.github.io/what-is-this-word/api/v1/words.json">words.json</a>。本次樣本 25 筆（含 1 筆測試資料）；日後以回應 total 為準。</p><h3>GET /api/v1/words — 清單</h3><pre>curl &quot;https://workshub-word-notes-api.tooooodayistheday.chatgpt.site/api/v1/words?limit=2&quot; \
+  -H &quot;Authorization: Bearer ${WORDS_BEARER_TOKEN}&quot;</pre><pre>{
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: &quot;integration-utf8&quot;,
+      &quot;title&quot;: &quot;整合欄位測試：中文與 emoji 🦫📚&quot;,
+      &quot;category&quot;: &quot;整合測試&quot;,
+      &quot;url&quot;: &quot;https://tooooodayistheday-maker.github.io/what-is-this-word/api-test.html&quot;,
+      &quot;published_date&quot;: &quot;2026-11-23&quot;,
+      &quot;primary_source_url&quot;: &quot;&quot;,
+      &quot;source_count&quot;: 0,
+      &quot;is_test&quot;: true,
+      &quot;life_context&quot;: &quot;當 Bot 收到中文與 emoji 🦫📚，文字是否仍然完整？&quot;,
+      &quot;summary&quot;: &quot;這是一筆明確標示的整合測試資料，用來檢查中文、emoji 🦫📚、空值、數字與長文字的欄位對應。&quot;,
+      &quot;act1&quot;: &quot;中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。&quot;,
+      &quot;act2&quot;: &quot;中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。&quot;,
+      &quot;act3&quot;: &quot;測試結束後，可停用這筆 API 測試資料；它不會進入隨機推薦與最新文章。&quot;,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:54+08:00&quot;
+    },
+    {
+      &quot;id&quot;: &quot;023&quot;,
+      &quot;title&quot;: &quot;公地悲劇&quot;,
+      &quot;category&quot;: &quot;日常經濟&quot;,
+      &quot;life_context&quot;: &quot;公用冰箱的食材大家都能拿，為什麼最後沒有人補貨？&quot;,
+      &quot;summary&quot;: &quot;辦公室茶水間的公用零食，為什麼常常一下就被拿光，最後卻沒有人願意主動補充？這背後其實隱含著共享資源面臨耗竭的經典困境。&quot;,
+      &quot;act1&quot;: &quot;公地悲劇描述一群人共同使用某種共享資源時，因為缺乏節制與維護，最終導致資源耗盡或崩潰的現象。\n\n這項概念是賽局理論中的基礎核心問題，常被學者用於研究生態演化動力學，探討背叛者與合作者在共享資源下的互動困境。&quot;,
+      &quot;act2&quot;: &quot;自編示意：在合租公寓裡，大家都能自由取用客廳公用冰箱的雞蛋與牛奶，卻往往沒有房客主動掏錢補貨或清理過期食品。\n\n關鍵細節在於每個人享受使用資源的全部好處，卻把維護成本留給所有人分擔，最終導致公用食材見底且冰箱無人維護。&quot;,
+      &quot;act3&quot;: &quot;公地悲劇並非單純指涉個人道德敗壞或自私，而是共享資源缺乏有效規範與誘因機制時，集體面臨的結構性困境。\n\n日常觀察時，可以思考團體中是否存在合適的激勵制度與互惠機制，能促使大家主動維護共享設施而非坐享其成。&quot;,
+      &quot;primary_source_url&quot;: &quot;https://pubmed.ncbi.nlm.nih.gov/42776033/&quot;,
+      &quot;source_count&quot;: 3,
+      &quot;url&quot;: &quot;https://tooooodayistheday-maker.github.io/what-is-this-word/#term-023&quot;,
+      &quot;published_date&quot;: &quot;2026-11-22&quot;,
+      &quot;is_test&quot;: false,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:54+08:00&quot;
+    }
+  ],
+  &quot;next_cursor&quot;: &quot;&lt;請使用實際回應的游標&gt;&quot;,
+  &quot;total&quot;: 25
+}</pre><h3>GET /api/v1/words/{id} — 單筆</h3><pre>curl &quot;https://workshub-word-notes-api.tooooodayistheday.chatgpt.site/api/v1/words/017&quot; \
+  -H &quot;Authorization: Bearer ${WORDS_BEARER_TOKEN}&quot;</pre><pre>{
+  &quot;id&quot;: &quot;017&quot;,
+  &quot;title&quot;: &quot;十五分鐘城市&quot;,
+  &quot;category&quot;: &quot;城市與空間&quot;,
+  &quot;life_context&quot;: &quot;如果買菜、上學和散步，都能從家裡走路到達，一天會有什麼不同？&quot;,
+  &quot;summary&quot;: &quot;如果買菜、看診、散步和接孩子，都能在住家附近完成，一天會有什麼不同？走得到不一定代表人人都好走，從一趟日常出門，想想你理想中的生活圈。&quot;,
+  &quot;act1&quot;: &quot;十五分鐘城市是指居民透過步行或騎自行車，在十五分鐘內就能抵達並滿足日常基本生活需求的都市規劃概念。\n\n此概念在研究與規劃中備受關注，核心在於透過密度、多樣性與設計三項要素，達成多功能鄰里的就近可及性。\n\n詞彙網站首頁：https://tooooodayistheday-maker.github.io/what-is-this-word/&quot;,
+  &quot;act2&quot;: &quot;自編示意：小林住在複合生活圈，早上下樓散步就能採買生鮮並送小孩上學，傍晚還能步行到口袋公園散步休憩。\n\n這個情境的核心細節在於各類日常機能與休閒綠地皆在短程徒步範圍內，不必依賴開車即可滿足每日活動。&quot;,
+  &quot;act3&quot;: &quot;容易混淆的是它不只是市中心步行便利，若忽略外圍市郊的高汽車依賴，或欠缺自然綠地與生物多樣性，便不算完整實踐。\n\n日常可觀察周遭除了商家外，是否擁有具生態價值的口袋公園或社區花園，並思考不同社群是否享有平等的綠意空間。&quot;,
+  &quot;primary_source_url&quot;: &quot;https://pubmed.ncbi.nlm.nih.gov/42338527/&quot;,
+  &quot;source_count&quot;: 3,
+  &quot;url&quot;: &quot;https://tooooodayistheday-maker.github.io/what-is-this-word/#term-017&quot;,
+  &quot;published_date&quot;: &quot;2026-11-16&quot;,
+  &quot;is_test&quot;: false,
+  &quot;updated_at&quot;: &quot;2026-11-23T17:18:54+08:00&quot;
+}</pre><h3>GET /api/v1/words/latest — 最新一篇</h3><pre>curl &quot;https://workshub-word-notes-api.tooooodayistheday.chatgpt.site/api/v1/words/latest&quot; \
+  -H &quot;Authorization: Bearer ${WORDS_BEARER_TOKEN}&quot;</pre><pre>{
+  &quot;id&quot;: &quot;023&quot;,
+  &quot;title&quot;: &quot;公地悲劇&quot;,
+  &quot;category&quot;: &quot;日常經濟&quot;,
+  &quot;life_context&quot;: &quot;公用冰箱的食材大家都能拿，為什麼最後沒有人補貨？&quot;,
+  &quot;summary&quot;: &quot;辦公室茶水間的公用零食，為什麼常常一下就被拿光，最後卻沒有人願意主動補充？這背後其實隱含著共享資源面臨耗竭的經典困境。&quot;,
+  &quot;act1&quot;: &quot;公地悲劇描述一群人共同使用某種共享資源時，因為缺乏節制與維護，最終導致資源耗盡或崩潰的現象。\n\n這項概念是賽局理論中的基礎核心問題，常被學者用於研究生態演化動力學，探討背叛者與合作者在共享資源下的互動困境。&quot;,
+  &quot;act2&quot;: &quot;自編示意：在合租公寓裡，大家都能自由取用客廳公用冰箱的雞蛋與牛奶，卻往往沒有房客主動掏錢補貨或清理過期食品。\n\n關鍵細節在於每個人享受使用資源的全部好處，卻把維護成本留給所有人分擔，最終導致公用食材見底且冰箱無人維護。&quot;,
+  &quot;act3&quot;: &quot;公地悲劇並非單純指涉個人道德敗壞或自私，而是共享資源缺乏有效規範與誘因機制時，集體面臨的結構性困境。\n\n日常觀察時，可以思考團體中是否存在合適的激勵制度與互惠機制，能促使大家主動維護共享設施而非坐享其成。&quot;,
+  &quot;primary_source_url&quot;: &quot;https://pubmed.ncbi.nlm.nih.gov/42776033/&quot;,
+  &quot;source_count&quot;: 3,
+  &quot;url&quot;: &quot;https://tooooodayistheday-maker.github.io/what-is-this-word/#term-023&quot;,
+  &quot;published_date&quot;: &quot;2026-11-22&quot;,
+  &quot;is_test&quot;: false,
+  &quot;updated_at&quot;: &quot;2026-11-23T17:18:54+08:00&quot;
+}</pre><h3>GET /api/v1/words/random — 隨機一篇</h3><pre>curl &quot;https://workshub-word-notes-api.tooooodayistheday.chatgpt.site/api/v1/words/random&quot; \
+  -H &quot;Authorization: Bearer ${WORDS_BEARER_TOKEN}&quot;</pre><pre>{
+  &quot;id&quot;: &quot;003&quot;,
+  &quot;title&quot;: &quot;敵意建築&quot;,
+  &quot;category&quot;: &quot;城市與空間&quot;,
+  &quot;life_context&quot;: &quot;為什麼有些長椅，中間偏偏多了一根扶手？&quot;,
+  &quot;summary&quot;: &quot;一張椅子讓人能坐下，卻很難久留；某些空間看似開放，使用起來卻處處受限。這些安排在照顧誰，又可能讓誰離開？從街角設施，練習分辨設計與使用的關係。&quot;,
+  &quot;act1&quot;: &quot;走累了想找地方坐，卻發現座椅很難久坐；有些平台還裝了尖刺，讓人無法停留。這些設計，有時會被稱為「敵意建築」（hostile architecture）。\n\n它指透過空間或設施，限制某些活動、排除某些使用者的設計策略，也常被稱為防禦性建築或排他性設計。這是城市設計與公共空間的討論概念，不是心理診斷。\n\n問題不只在外觀好不好看，而是：誰能舒服地使用這個地方？誰被擋在外面？&quot;,
+  &quot;act2&quot;: &quot;常被討論的例子，包括防止躺臥的座椅，以及阻止人停留的平台尖刺。這些安排可能限制無家者休息，也可能影響其他需要歇腳的人。\n\n自編示意：有人帶長輩散步，沿途的座椅卻很難安穩坐下，原本短短一段路，變得難以完成。\n\n不過，不能只看到扶手、隔板或欄杆，就認定是敵意建築。扶手也可能幫助長者起身，欄杆可能為了安全；用途、位置與實際影響都要一起看。&quot;,
+  &quot;act3&quot;: &quot;下次經過廣場、車站或公園，可以試著問三個問題：\n\n① 這個設計方便了誰，又讓誰更難使用？\n② 它處理的是安全需求，還是把某些人趕到別處？\n③ 有沒有兼顧安全、無障礙與休息需求的做法？\n\n討論時也可以這樣說：「我想了解這項設計的用途，以及是否有更包容的替代方案。」\n\n不是替每個設施貼標籤，而是多看見公共空間裡，不同人的使用需要。&quot;,
+  &quot;primary_source_url&quot;: &quot;https://www.unsw.edu.au/newsroom/news/2020/08/defensive-architecture-design-its-most-hostile&quot;,
+  &quot;source_count&quot;: 2,
+  &quot;url&quot;: &quot;https://tooooodayistheday-maker.github.io/what-is-this-word/#term-003&quot;,
+  &quot;published_date&quot;: &quot;2026-11-01&quot;,
+  &quot;is_test&quot;: false,
+  &quot;updated_at&quot;: &quot;2026-11-23T17:18:54+08:00&quot;
+}</pre><h3>GET /api/v1/categories — 分類</h3><pre>curl &quot;https://workshub-word-notes-api.tooooodayistheday.chatgpt.site/api/v1/categories&quot; \
+  -H &quot;Authorization: Bearer ${WORDS_BEARER_TOKEN}&quot;</pre><pre>{
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: &quot;urban&quot;,
+      &quot;title&quot;: &quot;城市與空間&quot;,
+      &quot;count&quot;: 3,
+      &quot;published_date&quot;: &quot;2026-11-01&quot;,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:54+08:00&quot;
+    },
+    {
+      &quot;id&quot;: &quot;psychology&quot;,
+      &quot;title&quot;: &quot;心理與思考&quot;,
+      &quot;count&quot;: 10,
+      &quot;published_date&quot;: &quot;2026-10-29&quot;,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:54+08:00&quot;
+    },
+    {
+      &quot;id&quot;: &quot;integration-test&quot;,
+      &quot;title&quot;: &quot;整合測試&quot;,
+      &quot;count&quot;: 1,
+      &quot;published_date&quot;: &quot;2026-11-23&quot;,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:54+08:00&quot;
+    },
+    {
+      &quot;id&quot;: &quot;digital&quot;,
+      &quot;title&quot;: &quot;數位生活&quot;,
+      &quot;count&quot;: 2,
+      &quot;published_date&quot;: &quot;2026-11-10&quot;,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:54+08:00&quot;
+    },
+    {
+      &quot;id&quot;: &quot;everyday&quot;,
+      &quot;title&quot;: &quot;日常經濟&quot;,
+      &quot;count&quot;: 3,
+      &quot;published_date&quot;: &quot;2026-11-07&quot;,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:54+08:00&quot;
+    },
+    {
+      &quot;id&quot;: &quot;society&quot;,
+      &quot;title&quot;: &quot;社會與日常&quot;,
+      &quot;count&quot;: 3,
+      &quot;published_date&quot;: &quot;2026-11-04&quot;,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:54+08:00&quot;
+    },
+    {
+      &quot;id&quot;: &quot;design&quot;,
+      &quot;title&quot;: &quot;設計與無障礙&quot;,
+      &quot;count&quot;: 3,
+      &quot;published_date&quot;: &quot;2026-11-05&quot;,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:54+08:00&quot;
+    }
+  ],
+  &quot;next_cursor&quot;: null,
+  &quot;total&quot;: 7
+}</pre><p><a href="https://tooooodayistheday-maker.github.io/what-is-this-word/api/v1/openapi.json">下載此 API 的 OpenAPI 3.1 文件</a></p><h2>河狸冷知識</h2><p>第二版 API Base：<a href="https://workshub-beaver-facts-api.tooooodayistheday.chatgpt.site">https://workshub-beaver-facts-api.tooooodayistheday.chatgpt.site</a></p><p>第一版不分頁清單：<a href="https://tooooodayistheday-maker.github.io/beaver-encyclopedia/api/v1/facts.json">facts.json</a>。本次樣本 61 筆（含 1 筆測試資料）；日後以回應 total 為準。</p><h3>GET /api/v1/facts — 清單</h3><pre>curl &quot;https://workshub-beaver-facts-api.tooooodayistheday.chatgpt.site/api/v1/facts?limit=2&quot; \
+  -H &quot;Authorization: Bearer ${FACTS_BEARER_TOKEN}&quot;</pre><pre>{
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: &quot;threads-17959604640337125&quot;,
+      &quot;title&quot;: &quot;北美河狸工作時各自獨立且鮮少接觸&quot;,
+      &quot;fact&quot;: &quot;北美河狸是高度群居的動物，生活在由家族組成的群體中。&quot;,
+      &quot;story&quot;: &quot;北美河狸是高度群居的動物，生活在由家族組成的群體中。\n\n在阿卡迪亞國家公園的紀錄中，北美河狸被視為最忙碌的居民之一。雖然牠們以勤奮聞名，但在工作時各自獨立，彼此之間往往鮮少接觸。&quot;,
+      &quot;category&quot;: &quot;Threads 河狸短篇&quot;,
+      &quot;source_name&quot;: &quot;美國國家公園管理局・阿卡迪亞&quot;,
+      &quot;source_url&quot;: &quot;https://www.nps.gov/articles/north-american-beaver-acadia.htm&quot;,
+      &quot;threads_url&quot;: &quot;https://www.threads.com/@tooooodayistheday/post/DgE6AzJHRKo&quot;,
+      &quot;url&quot;: &quot;https://tooooodayistheday-maker.github.io/beaver-encyclopedia/#fact=threads-17959604640337125&quot;,
+      &quot;published_date&quot;: &quot;2026-11-23&quot;,
+      &quot;primary_source_url&quot;: &quot;https://www.nps.gov/articles/north-american-beaver-acadia.htm&quot;,
+      &quot;source_count&quot;: 1,
+      &quot;is_test&quot;: false,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:55+08:00&quot;
+    },
+    {
+      &quot;id&quot;: &quot;integration-utf8&quot;,
+      &quot;title&quot;: &quot;整合欄位測試：中文與 emoji 🦫📚&quot;,
+      &quot;category&quot;: &quot;整合測試&quot;,
+      &quot;url&quot;: &quot;https://tooooodayistheday-maker.github.io/beaver-encyclopedia/api-test.html&quot;,
+      &quot;published_date&quot;: &quot;2026-11-23&quot;,
+      &quot;primary_source_url&quot;: &quot;&quot;,
+      &quot;source_count&quot;: 0,
+      &quot;is_test&quot;: true,
+      &quot;fact&quot;: &quot;這是整合測試資料：🦫📚中文與 emoji 都應原樣保留。&quot;,
+      &quot;story&quot;: &quot;中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。\n\n中文欄位測試：河狸 🦫、書本 📚、放大鏡 🔎。引號「你好」、半形引號 \&quot;hello\&quot;、換行與標點都應完整保留。這段文字只用於 WorksHub+ 整合測試，不是研究文章或正式冷知識。&quot;,
+      &quot;source_name&quot;: &quot;&quot;,
+      &quot;source_url&quot;: &quot;&quot;,
+      &quot;threads_url&quot;: &quot;&quot;,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:55+08:00&quot;
+    }
+  ],
+  &quot;next_cursor&quot;: &quot;&lt;請使用實際回應的游標&gt;&quot;,
+  &quot;total&quot;: 61
+}</pre><h3>GET /api/v1/facts/{id} — 單筆</h3><pre>curl &quot;https://workshub-beaver-facts-api.tooooodayistheday.chatgpt.site/api/v1/facts/orange&quot; \
+  -H &quot;Authorization: Bearer ${FACTS_BEARER_TOKEN}&quot;</pre><pre>{
+  &quot;id&quot;: &quot;orange&quot;,
+  &quot;title&quot;: &quot;橘色門牙，是牠的天然裝備&quot;,
+  &quot;fact&quot;: &quot;不是忘記刷牙，而是牙齒琺瑯質含有鐵。&quot;,
+  &quot;story&quot;: &quot;河狸門牙外層的鐵讓牙齒呈現深橘色，也能強化琺瑯質，協助承受啃咬。看見橘色牙齒，可別急著替牠預約洗牙。&quot;,
+  &quot;category&quot;: &quot;身體祕密&quot;,
+  &quot;source_name&quot;: &quot;Smithsonian’s National Zoo · Beaver&quot;,
+  &quot;source_url&quot;: &quot;https://nationalzoo.si.edu/animals/beaver&quot;,
+  &quot;threads_url&quot;: &quot;&quot;,
+  &quot;url&quot;: &quot;https://tooooodayistheday-maker.github.io/beaver-encyclopedia/#fact=orange&quot;,
+  &quot;published_date&quot;: &quot;2026-10-28&quot;,
+  &quot;primary_source_url&quot;: &quot;https://nationalzoo.si.edu/animals/beaver&quot;,
+  &quot;source_count&quot;: 1,
+  &quot;is_test&quot;: false,
+  &quot;updated_at&quot;: &quot;2026-11-23T17:18:55+08:00&quot;
+}</pre><h3>GET /api/v1/facts/latest — 最新一篇</h3><pre>curl &quot;https://workshub-beaver-facts-api.tooooodayistheday.chatgpt.site/api/v1/facts/latest&quot; \
+  -H &quot;Authorization: Bearer ${FACTS_BEARER_TOKEN}&quot;</pre><pre>{
+  &quot;id&quot;: &quot;threads-17959604640337125&quot;,
+  &quot;title&quot;: &quot;北美河狸工作時各自獨立且鮮少接觸&quot;,
+  &quot;fact&quot;: &quot;北美河狸是高度群居的動物，生活在由家族組成的群體中。&quot;,
+  &quot;story&quot;: &quot;北美河狸是高度群居的動物，生活在由家族組成的群體中。\n\n在阿卡迪亞國家公園的紀錄中，北美河狸被視為最忙碌的居民之一。雖然牠們以勤奮聞名，但在工作時各自獨立，彼此之間往往鮮少接觸。&quot;,
+  &quot;category&quot;: &quot;Threads 河狸短篇&quot;,
+  &quot;source_name&quot;: &quot;美國國家公園管理局・阿卡迪亞&quot;,
+  &quot;source_url&quot;: &quot;https://www.nps.gov/articles/north-american-beaver-acadia.htm&quot;,
+  &quot;threads_url&quot;: &quot;https://www.threads.com/@tooooodayistheday/post/DgE6AzJHRKo&quot;,
+  &quot;url&quot;: &quot;https://tooooodayistheday-maker.github.io/beaver-encyclopedia/#fact=threads-17959604640337125&quot;,
+  &quot;published_date&quot;: &quot;2026-11-23&quot;,
+  &quot;primary_source_url&quot;: &quot;https://www.nps.gov/articles/north-american-beaver-acadia.htm&quot;,
+  &quot;source_count&quot;: 1,
+  &quot;is_test&quot;: false,
+  &quot;updated_at&quot;: &quot;2026-11-23T17:18:55+08:00&quot;
+}</pre><h3>GET /api/v1/facts/today — 每日一則</h3><pre>curl &quot;https://workshub-beaver-facts-api.tooooodayistheday.chatgpt.site/api/v1/facts/today&quot; \
+  -H &quot;Authorization: Bearer ${FACTS_BEARER_TOKEN}&quot;</pre><pre>{
+  &quot;id&quot;: &quot;rodent&quot;,
+  &quot;title&quot;: &quot;牠是齧齒類，不是水獺&quot;,
+  &quot;fact&quot;: &quot;認識河狸，先從大門牙開始。&quot;,
+  &quot;story&quot;: &quot;河狸屬於齧齒目，擁有兩對明顯的鑿形門牙。持續生長的門牙與扁平有鱗尾巴，是認識牠的線索。&quot;,
+  &quot;category&quot;: &quot;身體祕密&quot;,
+  &quot;source_name&quot;: &quot;美國國家公園署 · 河狸自然史&quot;,
+  &quot;source_url&quot;: &quot;https://www.nps.gov/glac/learn/education/beaver-natural-history-narrative.htm&quot;,
+  &quot;threads_url&quot;: &quot;&quot;,
+  &quot;url&quot;: &quot;https://tooooodayistheday-maker.github.io/beaver-encyclopedia/#fact=rodent&quot;,
+  &quot;published_date&quot;: &quot;2026-10-28&quot;,
+  &quot;primary_source_url&quot;: &quot;https://www.nps.gov/glac/learn/education/beaver-natural-history-narrative.htm&quot;,
+  &quot;source_count&quot;: 1,
+  &quot;is_test&quot;: false,
+  &quot;updated_at&quot;: &quot;2026-11-23T17:18:55+08:00&quot;
+}</pre><h3>GET /api/v1/categories — 分類</h3><pre>curl &quot;https://workshub-beaver-facts-api.tooooodayistheday.chatgpt.site/api/v1/categories&quot; \
+  -H &quot;Authorization: Bearer ${FACTS_BEARER_TOKEN}&quot;</pre><pre>{
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: &quot;threads-short&quot;,
+      &quot;title&quot;: &quot;Threads 河狸短篇&quot;,
+      &quot;count&quot;: 33,
+      &quot;published_date&quot;: &quot;2026-10-21&quot;,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:55+08:00&quot;
+    },
+    {
+      &quot;id&quot;: &quot;integration-test&quot;,
+      &quot;title&quot;: &quot;整合測試&quot;,
+      &quot;count&quot;: 1,
+      &quot;published_date&quot;: &quot;2026-11-23&quot;,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:55+08:00&quot;
+    },
+    {
+      &quot;id&quot;: &quot;beaver-chronicles&quot;,
+      &quot;title&quot;: &quot;河狸事件簿&quot;,
+      &quot;count&quot;: 6,
+      &quot;published_date&quot;: &quot;2026-10-22&quot;,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:55+08:00&quot;
+    },
+    {
+      &quot;id&quot;: &quot;ecology&quot;,
+      &quot;title&quot;: &quot;生態影響&quot;,
+      &quot;count&quot;: 5,
+      &quot;published_date&quot;: &quot;2026-10-28&quot;,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:55+08:00&quot;
+    },
+    {
+      &quot;id&quot;: &quot;daily-life&quot;,
+      &quot;title&quot;: &quot;生活日常&quot;,
+      &quot;count&quot;: 4,
+      &quot;published_date&quot;: &quot;2026-10-28&quot;,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:55+08:00&quot;
+    },
+    {
+      &quot;id&quot;: &quot;engineering&quot;,
+      &quot;title&quot;: &quot;築壩工程&quot;,
+      &quot;count&quot;: 6,
+      &quot;published_date&quot;: &quot;2026-10-28&quot;,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:55+08:00&quot;
+    },
+    {
+      &quot;id&quot;: &quot;body-secrets&quot;,
+      &quot;title&quot;: &quot;身體祕密&quot;,
+      &quot;count&quot;: 6,
+      &quot;published_date&quot;: &quot;2026-10-28&quot;,
+      &quot;updated_at&quot;: &quot;2026-11-23T17:18:55+08:00&quot;
+    }
+  ],
+  &quot;next_cursor&quot;: null,
+  &quot;total&quot;: 7
+}</pre><p><a href="https://tooooodayistheday-maker.github.io/beaver-encyclopedia/api/v1/openapi.json">下載此 API 的 OpenAPI 3.1 文件</a></p><h2>第一版固定 JSON 路徑</h2><pre>詞彙網站：
+/api/v1/words.json
+/api/v1/words/017.json
+/api/v1/words/latest.json
+/api/v1/words/random.json
+/api/v1/categories.json
+
+河狸網站：
+/api/v1/facts.json
+/api/v1/facts/orange.json
+/api/v1/facts/latest.json
+/api/v1/facts/today.json
+/api/v1/categories.json</pre><p>第一版所有清單一次回傳全部資料，next_cursor 固定 null，不驗證金鑰、不支援即時計算查詢參數。random.json/today.json 是匯出時選定的快照，不是每次請求重新抽選。第一版不存在的檔案由 GitHub Pages 回 404，無法保證其錯誤頁為 JSON；統一 JSON 錯誤與 HTTP Content-Type 請以第二版為準。</p><h2>測試資料與更新規則</h2><p>兩組 API 都有 id=<code>integration-utf8</code>、category=<code>整合測試</code>、is_test=true 的測試紀錄，含中文、emoji 🦫📚🔎、引號、換行與超過千字的正文。可用單筆 API 或 <code>?category=integration-test</code> 取得。這些資料不會加入原網站首頁的詞庫、不會發布 Threads，也不會被 latest、random、today 選中。</p><p>is_test 為額外的扁平布林欄位。source_count、分類 count、清單 total 均為數字；id 保持字串（017 不可轉為 17）。測試紀錄沒有研究來源，因此 source_count=0，來源欄位為空字串；部分河狸網站原生文章沒有 Threads 貼文，threads_url 也會是空字串。</p><p>updated_at 是「API 公開內容最後異動時間」，不是排程執行時間；相同內容重建不會改時間。首次匯出使用匯出時間，往後依內容差異追蹤。published_date 保留原發布日期；河狸原生卡片以 Git 歷史首次加入網站的日期為依據。來源快取最多約 60 秒，另受 GitHub Pages 發布與快取時間影響。</p><p>random 每次從正式詞彙抽選，可能連續抽到同一詞。today 依台灣日期與當時資料集穩定選取同一筆；若資料集變動，結果可能變更。完整資料欄位保持平鋪，來源總數與主要來源分開提供。</p><h2>錯誤回應</h2><pre>{"error":{"code":"not_found","message":"找不到這筆資料。"}}
+{"error":{"code":"invalid_parameter","message":"limit 必須是 1 至 50 的整數。"}}
+{"error":{"code":"invalid_cursor","message":"游標無效；請清除 cursor 從第一頁開始。"}}
+{"error":{"code":"cursor_expired","message":"資料已更新；請清除 cursor 重新讀取。"}}</pre><p>第二版所有回應為 application/json; charset=utf-8。401 驗證失敗；400 查詢或游標錯誤；404 路徑/資料不存在；405 非 GET；502 公開來源異常；503 執行環境尚未設定完成。不設定 CORS。成功與錯誤皆不快取給共用代理。</p></html>
