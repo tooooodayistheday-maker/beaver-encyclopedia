@@ -128,6 +128,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "史密森尼國家動物園",
     "url": "https://nationalzoo.si.edu/animals/beaver"
   },
+  "threads-17959604640337125-source-1": {
+    "name": "美國國家公園管理局・阿卡迪亞",
+    "url": "https://www.nps.gov/articles/north-american-beaver-acadia.htm"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -186,6 +190,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-17959604640337125",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸工作時各自獨立且鮮少接觸",
+    "summary": "北美河狸是高度群居的動物，生活在由家族組成的群體中。",
+    "body": "北美河狸是高度群居的動物，生活在由家族組成的群體中。\n\n在阿卡迪亞國家公園的紀錄中，北美河狸被視為最忙碌的居民之一。雖然牠們以勤奮聞名，但在工作時各自獨立，彼此之間往往鮮少接觸。",
+    "paragraphs": [
+      "北美河狸是高度群居的動物，生活在由家族組成的群體中。",
+      "在阿卡迪亞國家公園的紀錄中，北美河狸被視為最忙碌的居民之一。雖然牠們以勤奮聞名，但在工作時各自獨立，彼此之間往往鮮少接觸。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-17959604640337125-source-1",
+    "sourceIds": [
+      "threads-17959604640337125-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-23",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DgE6AzJHRKo",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "根據阿卡迪亞國家公園的紀錄，北美河狸在工作時具有什麼互動特點？",
+      "options": [
+        "彼此之間往往鮮少接觸",
+        "由成年個體全程指揮",
+        "隨時保持緊密的肢體接觸",
+        "只在群體聚集時才開始建造"
+      ],
+      "answer": 0,
+      "explanation": "雖然牠們以勤奮聞名，但在工作時各自獨立，彼此之間往往鮮少接觸。"
+    }
+  },
   {
     "id": "threads-18131664229896298",
     "category": "Threads 河狸短篇",
