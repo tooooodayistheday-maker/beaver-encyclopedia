@@ -132,6 +132,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "美國國家公園管理局・阿卡迪亞",
     "url": "https://www.nps.gov/articles/north-american-beaver-acadia.htm"
   },
+  "threads-18096569858277449-source-1": {
+    "name": "阿拉斯加魚類與野生動物部門",
+    "url": "https://www.adfg.alaska.gov/index.cfm?adfg=beaver.main"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -190,6 +194,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18096569858277449",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸一生都在持續生長",
+    "summary": "北美河狸一生都在持續生長。包含尾巴在內，北美河狸的體長可以達到三至四英呎。",
+    "body": "北美河狸一生都在持續生長。包含尾巴在內，北美河狸的體長可以達到三至四英呎。\n\n大多數成年北美河狸的體重在四十至七十磅之間。非常年老且肥胖的北美河狸，體重最高可達到一百磅。",
+    "paragraphs": [
+      "北美河狸一生都在持續生長。包含尾巴在內，北美河狸的體長可以達到三至四英呎。",
+      "大多數成年北美河狸的體重在四十至七十磅之間。非常年老且肥胖的北美河狸，體重最高可達到一百磅。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18096569858277449-source-1",
+    "sourceIds": [
+      "threads-18096569858277449-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-24",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DgHe0xsnQ-U",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "關於北美河狸的生長特徵，下列敘述何者正確？",
+      "options": [
+        "一生都在持續生長",
+        "成年後體重不再改變",
+        "體長測量不包含尾巴",
+        "老年時體長逐漸縮小"
+      ],
+      "answer": 0,
+      "explanation": "北美河狸一生都在持續生長。"
+    }
+  },
   {
     "id": "threads-17959604640337125",
     "category": "Threads 河狸短篇",

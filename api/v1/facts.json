@@ -1,6 +1,22 @@
 {
   "data": [
     {
+      "id": "threads-18096569858277449",
+      "title": "北美河狸一生都在持續生長",
+      "fact": "北美河狸一生都在持續生長。包含尾巴在內，北美河狸的體長可以達到三至四英呎。",
+      "story": "北美河狸一生都在持續生長。包含尾巴在內，北美河狸的體長可以達到三至四英呎。\n\n大多數成年北美河狸的體重在四十至七十磅之間。非常年老且肥胖的北美河狸，體重最高可達到一百磅。",
+      "category": "Threads 河狸短篇",
+      "source_name": "阿拉斯加魚類與野生動物部門",
+      "source_url": "https://www.adfg.alaska.gov/index.cfm?adfg=beaver.main",
+      "threads_url": "https://www.threads.com/@tooooodayistheday/post/DgHe0xsnQ-U",
+      "url": "https://tooooodayistheday-maker.github.io/beaver-encyclopedia/#fact=threads-18096569858277449",
+      "published_date": "2026-11-24",
+      "primary_source_url": "https://www.adfg.alaska.gov/index.cfm?adfg=beaver.main",
+      "source_count": 1,
+      "is_test": false,
+      "updated_at": "2026-11-24T16:03:47+08:00"
+    },
+    {
       "id": "threads-17959604640337125",
       "title": "北美河狸工作時各自獨立且鮮少接觸",
       "fact": "北美河狸是高度群居的動物，生活在由家族組成的群體中。",
@@ -978,5 +994,5 @@
     }
   ],
   "next_cursor": null,
-  "total": 61
+  "total": 62
 }
