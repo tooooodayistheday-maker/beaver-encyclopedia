@@ -136,6 +136,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "阿拉斯加魚類與野生動物部門",
     "url": "https://www.adfg.alaska.gov/index.cfm?adfg=beaver.main"
   },
+  "threads-18121563223785588-source-1": {
+    "name": "美國國家公園管理局・冰河國家公園",
+    "url": "https://www.nps.gov/glac/learn/education/beaver-natural-history-narrative.htm"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -194,6 +198,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18121563223785588",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸門牙需頻繁啃咬以防過長",
+    "summary": "北美河狸擁有兩對突出且呈鑿狀的門牙。這些牙齒會持續生長，並始終維持鋒利的邊緣。",
+    "body": "北美河狸擁有兩對突出且呈鑿狀的門牙。這些牙齒會持續生長，並始終維持鋒利的邊緣。\n\n因為門牙具有持續生長的特性，北美河狸必須頻繁地進行啃咬。如果沒有頻繁使用門牙啃咬，牠們的牙齒就會變得過長。",
+    "paragraphs": [
+      "北美河狸擁有兩對突出且呈鑿狀的門牙。這些牙齒會持續生長，並始終維持鋒利的邊緣。",
+      "因為門牙具有持續生長的特性，北美河狸必須頻繁地進行啃咬。如果沒有頻繁使用門牙啃咬，牠們的牙齒就會變得過長。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18121563223785588-source-1",
+    "sourceIds": [
+      "threads-18121563223785588-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-25",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DgKDoOTIKBM",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "北美河狸若沒有頻繁使用門牙進行啃咬，會發生什麼情況？",
+      "options": [
+        "門牙會停止生長",
+        "牙齒就會變得過長",
+        "門牙數量會減少",
+        "門牙形狀失去鑿狀"
+      ],
+      "answer": 1,
+      "explanation": "如果沒有頻繁使用門牙啃咬，牠們的牙齒就會變得過長。"
+    }
+  },
   {
     "id": "threads-18096569858277449",
     "category": "Threads 河狸短篇",
