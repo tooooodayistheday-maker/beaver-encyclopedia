@@ -144,6 +144,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "美國國家公園管理局・白令陸橋",
     "url": "https://www.nps.gov/bela/learn/nature/beaver.htm"
   },
+  "threads-18061463498567255-source-1": {
+    "name": "美國國家公園管理局・落磯山",
+    "url": "https://www.nps.gov/romo/learn/nature/beavers.htm"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -202,6 +206,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18061463498567255",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸被科學家視為關鍵物種",
+    "summary": "科學家將北美河狸視為一種關鍵物種。",
+    "body": "科學家將北美河狸視為一種關鍵物種。\n\n在科學家的定義中，關鍵物種是指能夠以特定方式改變環境的物種。這種改變方式對生態系統有益，並且能促進其他物種的存在。",
+    "paragraphs": [
+      "科學家將北美河狸視為一種關鍵物種。",
+      "在科學家的定義中，關鍵物種是指能夠以特定方式改變環境的物種。這種改變方式對生態系統有益，並且能促進其他物種的存在。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18061463498567255-source-1",
+    "sourceIds": [
+      "threads-18061463498567255-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-27",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DgPNqSto2kl",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "根據科學家的分類，北美河狸被視為哪種型別的物種？",
+      "options": [
+        "關鍵物種",
+        "入侵物種",
+        "瀕危物種",
+        "外來物種"
+      ],
+      "answer": 0,
+      "explanation": "科學家將北美河狸視為一種關鍵物種。"
+    }
+  },
   {
     "id": "threads-18205570729376871",
     "category": "Threads 河狸短篇",

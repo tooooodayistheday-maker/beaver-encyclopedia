@@ -1,6 +1,22 @@
 {
   "data": [
     {
+      "id": "threads-18061463498567255",
+      "title": "北美河狸被科學家視為關鍵物種",
+      "fact": "科學家將北美河狸視為一種關鍵物種。",
+      "story": "科學家將北美河狸視為一種關鍵物種。\n\n在科學家的定義中，關鍵物種是指能夠以特定方式改變環境的物種。這種改變方式對生態系統有益，並且能促進其他物種的存在。",
+      "category": "Threads 河狸短篇",
+      "source_name": "美國國家公園管理局・落磯山",
+      "source_url": "https://www.nps.gov/romo/learn/nature/beavers.htm",
+      "threads_url": "https://www.threads.com/@tooooodayistheday/post/DgPNqSto2kl",
+      "url": "https://tooooodayistheday-maker.github.io/beaver-encyclopedia/#fact=threads-18061463498567255",
+      "published_date": "2026-11-27",
+      "primary_source_url": "https://www.nps.gov/romo/learn/nature/beavers.htm",
+      "source_count": 1,
+      "is_test": false,
+      "updated_at": "2026-11-27T16:07:39+08:00"
+    },
+    {
       "id": "threads-18205570729376871",
       "title": "北美河狸重建水壩的觸發線索",
       "fact": "通常觸發北美河狸重建水壩的關鍵，在於聲音與視覺線索。",
@@ -1026,5 +1042,5 @@
     }
   ],
   "next_cursor": null,
-  "total": 64
+  "total": 65
 }
