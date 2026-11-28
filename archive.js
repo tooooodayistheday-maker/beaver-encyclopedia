@@ -148,6 +148,10 @@ Object.assign(window.BEAVER_SOURCES, {
     "name": "美國國家公園管理局・落磯山",
     "url": "https://www.nps.gov/romo/learn/nature/beavers.htm"
   },
+  "threads-18036685847850391-source-1": {
+    "name": "密西根大學動物多樣性資料庫・北美河狸",
+    "url": "https://animaldiversity.org/accounts/Castor_canadensis/"
+  },
   "threads-18104114801347083-source-1": {
     "name": "How can beavers save government‘s money - Nature Conservation Agency of the Czech Republic - AOPK ČR",
     "url": "https://brdy.aopk.gov.cz/web/en/-/beavers-save-governments-money"
@@ -206,6 +210,39 @@ Object.assign(window.BEAVER_SOURCES, {
   }
 });
 window.BEAVER_ARCHIVE = [
+  {
+    "id": "threads-18036685847850391",
+    "category": "Threads 河狸短篇",
+    "title": "北美河狸後腿比前腿長的行走特徵",
+    "summary": "北美河狸在陸地上行走時，身體後端會高於前端。",
+    "body": "北美河狸在陸地上行走時，身體後端會高於前端。\n\n北美河狸的後腿長度比前腿更長。這項身體構造特徵，使得北美河狸在陸地上行走時後端會高於前端。",
+    "paragraphs": [
+      "北美河狸在陸地上行走時，身體後端會高於前端。",
+      "北美河狸的後腿長度比前腿更長。這項身體構造特徵，使得北美河狸在陸地上行走時後端會高於前端。"
+    ],
+    "species": "北美河狸",
+    "scopeLabel": "原文範圍",
+    "source": "threads-18036685847850391-source-1",
+    "sourceIds": [
+      "threads-18036685847850391-source-1"
+    ],
+    "icon": "leaf",
+    "publishedDate": "2026-11-28",
+    "threadsUrl": "https://www.threads.com/@tooooodayistheday/post/DgRyHRuox32",
+    "archive": true,
+    "eventDate": "",
+    "quiz": {
+      "question": "北美河狸在陸地上行走時後端高於前端的原因為何？",
+      "options": [
+        "前腿長度比後腿更長",
+        "後腿長度比前腿更長",
+        "前肢需要貼地爬行",
+        "尾巴重量壓低了前端"
+      ],
+      "answer": 1,
+      "explanation": "北美河狸的後腿長度比前腿更長。"
+    }
+  },
   {
     "id": "threads-18061463498567255",
     "category": "Threads 河狸短篇",
